@@ -25,12 +25,11 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
 
   // define a d3 diagonal projection for use by the node paths later on.
   var diagonal = d3.svg.diagonal()
-  .projection(function(d) {
-      return [d.y, d.x];
-  });
+    .projection(function(d) {
+        return [d.y, d.x];
+    });
 
   // A recursive helper function for performing some setup by walking through all nodes
-
   function visit(parent, visitFn, childrenFn) {
     if (!parent) return;
 
@@ -66,7 +65,7 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
 
   // TODO: Pan function, can be better implemented.
 
-  function pan(domNode, direction) {
+  function pan(domNode, direction) {alert("panning");
     var speed = panSpeed;
     if (panTimer) {
         clearTimeout(panTimer);
