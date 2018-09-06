@@ -1,3 +1,9 @@
 {
-    "name": "software development"
+    "name": "software development",
+
+    "children": [
+        {
+            "name": "web"
+        }
+    ]
 }
