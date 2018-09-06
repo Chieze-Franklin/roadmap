@@ -65,7 +65,7 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
 
   // TODO: Pan function, can be better implemented.
 
-  function pan(domNode, direction) {alert("panning");
+  function pan(domNode, direction) {
     var speed = panSpeed;
     if (panTimer) {
         clearTimeout(panTimer);
@@ -91,7 +91,6 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
 }
 
 // Define the zoom function for the zoomable tree
-
 function zoom() {
     svgGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
 }
