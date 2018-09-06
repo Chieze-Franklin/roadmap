@@ -1,3 +1,7 @@
+/*
+* http://bl.ocks.org/robschmuecker/7880033
+*/
+
 treeJSON = d3.json("roadmap.json", function(error, treeData) {
   // Calculate total nodes, max label length
   var totalNodes = 0;
