@@ -1,7 +1,7 @@
 {
-    "name": "flare",
+    "name": "software development",
     "children": [{
-        "name": "analytics",
+        "name": "web",
         "children": [{
             "name": "cluster",
             "children": [{
