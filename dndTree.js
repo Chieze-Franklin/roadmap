@@ -142,22 +142,23 @@ function initiateDrag(d, domNode) {
 
 // define the baseSvg, attaching a class for styling and the zoomListener
 var baseSvg = d3.select("#tree-container").append("svg")
-.attr("width", viewerWidth)
-.attr("height", viewerHeight)
-.attr("class", "overlay")
-.call(zoomListener);
+  .attr("width", viewerWidth)
+  .attr("height", viewerHeight)
+  .attr("class", "overlay")
+  .call(zoomListener);
 
 // Define the drag listeners for drag/drop behaviour of nodes.
 dragListener = d3.behavior.drag()
-.on("dragstart", function(d) {
+  .on("dragstart", function(d) {
     if (d == root) {
-        return;
+      return;
     }
     dragStarted = true;
     nodes = tree.nodes(d);
     d3.event.sourceEvent.stopPropagation();
-    // it's important that we suppress the mouseover event on the node being dragged. Otherwise it will absorb the mouseover event and the underlying node will not detect it d3.select(this).attr('pointer-events', 'none');
-})
+    // it's important that we suppress the mouseover event on the node being dragged. Otherwise it will absorb the mouseover event and the underlying node will not detect it
+    d3.select(this).attr('pointer-events', 'none');
+  })
 .on("drag", function(d) {
     if (d == root) {
         return;
