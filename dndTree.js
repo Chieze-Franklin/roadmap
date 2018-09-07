@@ -334,12 +334,22 @@ dragListener = d3.behavior.drag()
   // Toggle children on click.
 
   function click(d) {
-    alert("yahhh");
-    console.log(d);
     if (d3.event.defaultPrevented) return; // click suppressed
     d = toggleChildren(d);
     update(d);
     centerNode(d);
+  }
+
+  function mouseover(d) {
+    if (d3.event.defaultPrevented) return; // mouseover suppressed
+    alert("yayyyy mouseover");
+    console.log(d);
+  }
+
+  function mouseout(d) {
+    if (d3.event.defaultPrevented) return; // mouseout suppressed
+    alert("yayyyy mouseout");
+    console.log(d);
   }
 
 function update(source) {
@@ -387,7 +397,9 @@ function update(source) {
       .attr("transform", function(d) {
           return "translate(" + source.y0 + "," + source.x0 + ")";
       })
-      .on('click', click);
+      .on('click', click)
+      .on('mouseout', mouseout)
+      .on('mouseover', mouseover);
 
   nodeEnter.append("circle")
       .attr('class', 'nodeCircle')
