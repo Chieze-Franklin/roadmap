@@ -175,37 +175,29 @@
             }]
         }]
     }, {
-        "name": "scale",
+        "name": "Operating System & Hardware",
         "children": [{
-            "name": "IScaleMap",
-            "size": 2105
+            "name": "OS Development",
+            "children": [{
+                "name": "Android",
+                "children": [{
+                        "name": "System Apps",
+                        "size": 330
+                    }, {
+                        "name": "Flashing, Rooting, Unlocking...",
+                        "size": 287
+                    }, {
+                        "name": "Firmware",
+                        "size": 264
+                    }, {
+                        "name": "Forking Android",
+                        "size": 264
+                    }
+                ]
+            }]
         }, {
-            "name": "LinearScale",
-            "size": 1316
-        }, {
-            "name": "LogScale",
+            "name": "Hardware Components",
             "size": 3151
-        }, {
-            "name": "OrdinalScale",
-            "size": 3770
-        }, {
-            "name": "QuantileScale",
-            "size": 2435
-        }, {
-            "name": "QuantitativeScale",
-            "size": 4839
-        }, {
-            "name": "RootScale",
-            "size": 1756
-        }, {
-            "name": "Scale",
-            "size": 4268
-        }, {
-            "name": "ScaleType",
-            "size": 1821
-        }, {
-            "name": "TimeScale",
-            "size": 5833
         }]
     }, {
         "name": "util",

@@ -248,59 +248,59 @@ dragListener = d3.behavior.drag()
     }
   }
   
-      // Helper functions for collapsing and expanding nodes.
+  // Helper functions for collapsing and expanding nodes.
   
-      function collapse(d) {
-          if (d.children) {
-              d._children = d.children;
-              d._children.forEach(collapse);
-              d.children = null;
-          }
-      }
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+
+  function expand(d) {
+    if (d._children) {
+      d.children = d._children;
+      d.children.forEach(expand);
+      d._children = null;
+    }
+  }
   
-      function expand(d) {
-          if (d._children) {
-              d.children = d._children;
-              d.children.forEach(expand);
-              d._children = null;
-          }
-      }
-  
-      var overCircle = function(d) {
-          selectedNode = d;
-          updateTempConnector();
-      };
-      var outCircle = function(d) {
-          selectedNode = null;
-          updateTempConnector();
-      };
+  var overCircle = function(d) {
+    selectedNode = d;
+    updateTempConnector();
+  };
+  var outCircle = function(d) {
+    selectedNode = null;
+    updateTempConnector();
+  };
 
-      // Function to update the temporary connector indicating dragging affiliation
-    var updateTempConnector = function() {
-      var data = [];
-      if (draggingNode !== null && selectedNode !== null) {
-          // have to flip the source coordinates since we did this for the existing connectors on the original tree
-          data = [{
-              source: {
-                  x: selectedNode.y0,
-                  y: selectedNode.x0
-              },
-              target: {
-                  x: draggingNode.y0,
-                  y: draggingNode.x0
-              }
-          }];
-      }
-      var link = svgGroup.selectAll(".templink").data(data);
+  // Function to update the temporary connector indicating dragging affiliation
+  var updateTempConnector = function() {
+    var data = [];
+    if (draggingNode !== null && selectedNode !== null) {
+      // have to flip the source coordinates since we did this for the existing connectors on the original tree
+      data = [{
+        source: {
+          x: selectedNode.y0,
+          y: selectedNode.x0
+        },
+        target: {
+          x: draggingNode.y0,
+          y: draggingNode.x0
+        }
+      }];
+    }
+    var link = svgGroup.selectAll(".templink").data(data);
 
-      link.enter().append("path")
-          .attr("class", "templink")
-          .attr("d", d3.svg.diagonal())
-          .attr('pointer-events', 'none');
+    link.enter().append("path")
+      .attr("class", "templink")
+      .attr("d", d3.svg.diagonal())
+      .attr('pointer-events', 'none');
 
-      link.attr("d", d3.svg.diagonal());
+    link.attr("d", d3.svg.diagonal());
 
-      link.exit().remove();
+    link.exit().remove();
   };
 
   // Function to center node when clicked/dropped so node doesn't get lost when collapsing/moving with large amount of children.
@@ -312,33 +312,35 @@ dragListener = d3.behavior.drag()
     x = x * scale + viewerWidth / 2;
     y = y * scale + viewerHeight / 2;
     d3.select('g').transition()
-        .duration(duration)
-        .attr("transform", "translate(" + x + "," + y + ")scale(" + scale + ")");
+      .duration(duration)
+      .attr("transform", "translate(" + x + "," + y + ")scale(" + scale + ")");
     zoomListener.scale(scale);
     zoomListener.translate([x, y]);
-}
+  }
 
-// Toggle children function
+  // Toggle children function
 
-function toggleChildren(d) {
+  function toggleChildren(d) {
     if (d.children) {
-        d._children = d.children;
-        d.children = null;
+      d._children = d.children;
+      d.children = null;
     } else if (d._children) {
-        d.children = d._children;
-        d._children = null;
+      d.children = d._children;
+      d._children = null;
     }
     return d;
-}
+  }
 
-// Toggle children on click.
+  // Toggle children on click.
 
-function click(d) {
+  function click(d) {
+    alert("yahhh");
+    console.log(d);
     if (d3.event.defaultPrevented) return; // click suppressed
     d = toggleChildren(d);
     update(d);
     centerNode(d);
-}
+  }
 
 function update(source) {
   // Compute the new height, function counts total children of root node and sets tree height accordingly.
