@@ -538,4 +538,3 @@ root.y0 = 0;
 update(root);
 centerNode(root);
 });
-console.log(treeJSON);
