@@ -1,5 +1,5 @@
 {
-    "name": "Software Development",
+    "name": "Life-Long Learning",
     "children": [{
         "name": "Web",
         "children": [{
@@ -116,32 +116,38 @@
                 "name": "Transpilers",
                 "size": 2220
             }]
+        }, {
+            "name": "Runtime/Execution Environments",
+            "size": 2165
+        }, {
+            "name": "Version Control",
+            "size": 2165
         }]
     }, {
-        "name": "physics",
+        "name": "Games & Graphics",
         "children": [{
-            "name": "DragForce",
+            "name": "2D Graphics",
             "size": 1082
         }, {
-            "name": "GravityForce",
+            "name": "3D Graphics",
             "size": 1336
         }, {
-            "name": "IForce",
+            "name": "2D Animations",
             "size": 319
         }, {
-            "name": "NBodyForce",
+            "name": "3D Animations",
             "size": 10498
         }, {
-            "name": "Particle",
+            "name": "2D Games",
             "size": 2822
         }, {
-            "name": "Simulation",
+            "name": "3D Games",
             "size": 9983
         }, {
-            "name": "Spring",
+            "name": "Augmented Reality",
             "size": 2213
         }, {
-            "name": "SpringForce",
+            "name": "Virtual Reality",
             "size": 1681
         }]
     }, {
