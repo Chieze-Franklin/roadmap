@@ -1,5 +1,5 @@
 {
-    "name": "Software development",
+    "name": "Software Development",
     "children": [{
         "name": "Web",
         "children": [{
@@ -61,64 +61,61 @@
             }]
         }]
     }, {
-        "name": "data",
+        "name": "Developer Tools",
         "children": [{
-            "name": "converters",
+            "name": "Guidelines & Conventions",
+            "size": 1759
+        }, {
+            "name": "CLI Tools",
+            "size": 2165
+        }, {
+            "name": "Continuous Integration & Deployment",
             "children": [{
-                "name": "Converters",
-                "size": 721
-            }, {
-                "name": "DelimitedTextConverter",
-                "size": 4294
-            }, {
-                "name": "GraphMLConverter",
-                "size": 9800
-            }, {
-                "name": "IDataConverter",
-                "size": 1314
-            }, {
-                "name": "JSONConverter",
+                "name": "Test Runners",
                 "size": 2220
             }]
         }, {
-            "name": "DataField",
-            "size": 1759
+            "name": "Dependency Managers",
+            "children": [{
+                "name": "Module Bundlers",
+                "size": 721
+            }, {
+                "name": "Package Managers",
+                "size": 2220
+            }]
         }, {
-            "name": "DataSchema",
-            "size": 2165
-        }, {
-            "name": "DataSet",
-            "size": 586
-        }, {
-            "name": "DataSource",
-            "size": 3331
-        }, {
-            "name": "DataTable",
+            "name": "Frameworks and Libraries",
             "size": 772
         }, {
-            "name": "DataUtil",
-            "size": 3322
-        }]
-    }, {
-        "name": "display",
-        "children": [{
-            "name": "DirtySprite",
-            "size": 8833
+            "name": "IDEs",
+            "children": [{
+                "name": "IDE Plugins",
+                "size": 2220
+            }]
         }, {
-            "name": "LineSprite",
-            "size": 1732
+            "name": "Languages",
+            "size": 2165
         }, {
-            "name": "RectSprite",
-            "size": 3623
-        }, {
-            "name": "TextSprite",
-            "size": 10066
-        }]
-    }, {
-        "name": "flex",
-        "children": [{
-            "name": "FlareVis",
-            "size": 4116
+            "name": "Language Tools",
+            "children": [{
+                "name": "Analyzers (static and dynamic)",
+                "size": 721
+            }, {
+                "name": "Compilers",
+                "size": 2220
+            }, {
+                "name": "Cross-Language Communication",
+                "size": 2220
+            }, {
+                "name": "Linters",
+                "size": 2220
+            }, {
+                "name": "Parsers",
+                "size": 2220
+            }, {
+                "name": "Transpilers",
+                "size": 2220
+            }]
         }]
     }, {
         "name": "physics",
