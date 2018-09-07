@@ -1,9 +1,9 @@
 {
     "name": "Life-Long Learning",
+    "description": "This is a roadmap",
+    "links": ["https://github.com", "https://facebook.com"],
     "children": [{
         "name": "Web",
-        "description": "This is a roadmap",
-        "links": ["https://github.com", "https://facebook.com"],
         "children": [{
             "name": "Back-End",
             "children": [{

@@ -3,7 +3,7 @@
 */
 
 treeJSON = d3.json("roadmap.json", function(error, treeData) {
-  console.log(treeData);
+
   // Calculate total nodes, max label length
   var totalNodes = 0;
   var maxLabelLength = 0;
@@ -343,13 +343,12 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    alert("yayyyy mouseover 2");
+    if (d.description) alert(d.description);
     console.log(d);
   }
 
   function mouseout(d) {
     if (d3.event.defaultPrevented) return; // mouseout suppressed
-    alert("yayyyy mouseout 2");
     console.log(d);
   }
 
