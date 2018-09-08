@@ -350,23 +350,22 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 15");
-    //var tooltipDivElement = tooltipDiv[0][0];
-    //var tooltipDivElement = $('#mytooltip')[0];
-    // tooltipDivElement.transition()
-    //   .duration(500)
-    //   .style('opacity', 0);
-    // tooltipDivElement.transition()
-    //   .duration(200)
-    //   .style('opacity', 0.9);
-    // tooltipDivElement.html(`<a href=${d.name}></a>`)
-    //   .style("left", (d3.event.pageX) + "px")
-    //   .style("top", (d3.event.pageY - 28) + "px");
-    //tooltipDivElement.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;';
-    tooltipDivElement.style.left = `${d3.event.pageX - 30}px`;
-    tooltipDivElement.style.top = `${d3.event.pageY - 15}px`;
+    console.log("build 17");
+    tooltipDivElement.style.left = `${d3.event.pageX - 25}px`;
+    tooltipDivElement.style.top = `${d3.event.pageY - 10}px`;
 
-    tooltip.updateTitleContent(d.name);
+    var tooltipmodule = document.createElement('div');
+    tooltipmodule.classList.add("tooltip-module");
+    tooltipmodule.setAttribute("style", "opacity: 0; pointer-events: none;");
+    var titleP = document.createElement('p');
+    titleP.classList.add("title");
+    var titleB = document.createElement('b');
+    var titleBText = document.createTextNode(d.name);
+    titleB.appendChild(titleBText);
+    titleP.appendChild(titleB);
+    tooltipmodule.appendChild(titleP);
+
+    tooltip.updateTitleContent(tooltipmodule);
     tooltip.show();
   }
 
