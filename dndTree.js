@@ -348,10 +348,20 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
+    console.log("build 3");
     console.log(tooltipDiv);
     console.log(tooltipDiv[0]);
     console.log(tooltipDiv[0][0]);
     var tooltipDivElement = tooltipDiv[0][0];
+    tooltipDivElement.transition()
+      .duration(500)
+      .style('opacity', 0);
+    tooltipDivElement.transition()
+      .duration(200)
+      .style('opacity', 0.9);
+    tooltipDivElement.html(`<a href=${d.name}></a>`)
+      .style("left", (d3.event.pageX) + "px")
+      .style("top", (d3.event.pageY - 28) + "px");
   }
 
   function mouseout(d) {
