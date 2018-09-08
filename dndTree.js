@@ -409,9 +409,12 @@ function update(source) {
       .attr("transform", function(d) {
           return "translate(" + source.y0 + "," + source.x0 + ")";
       })
-      .append('svg:title')
-      .text(function(d) {
-        return d.name;
+      .append('svg:title') // svg tooltip
+      .text(function(d) { // text that will appear in tooltip
+        var tooltipText = d.name;
+        if (d.description) tooltipText += d.description + '\n\n';
+        if (d.links) tooltipText += d.links.join('\n');
+        return tooltipText;
       })
       .on('click', click)
       .on('mouseout', mouseout)
