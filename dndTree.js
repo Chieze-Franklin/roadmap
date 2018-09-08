@@ -414,7 +414,7 @@ function update(source) {
         var tooltipText = d.name;
         if (d.description) tooltipText += d.description + '\n\n';
         if (d.links) tooltipText += d.links.join('\n');
-        return tooltipText;
+        return d.name;
       })
       .on('click', click)
       .on('mouseout', mouseout)
