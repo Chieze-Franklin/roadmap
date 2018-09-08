@@ -352,7 +352,7 @@ dragListener = d3.behavior.drag()
     const tooltip = new Tooltip(jqElement.context.body, {
       //title: d.desciption + '\n\n' + d.links.join('\n'),
       title: "yayyyyyyyyyyy",
-      trigger: 'manual'
+      trigger: 'click hover focus'
     });
     tooltip.show();
   }
