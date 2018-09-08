@@ -417,8 +417,8 @@ function update(source) {
   .append('svg:title') // svg tooltip
   .text(function(d) { // text that will appear in tooltip
     var tooltipText = d.name;
-    if (d.description) tooltipText += d.description + '\n\n';
-    if (d.links) tooltipText += d.links.join('\n');
+    if (d.description) tooltipText += '\n\n' + d.description;
+    if (d.links) tooltipText += '\n\n' + d.links.join('\n');
     return tooltipText;
   })
 
