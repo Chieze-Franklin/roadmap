@@ -83,6 +83,9 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
         scale = zoomListener.scale();
         svgGroup.transition().attr("transform", "translate(" + translateX + "," + translateY + ")scale(" + scale + ")");
         d3.select(domNode).select('g.node').attr("transform", "translate(" + translateX + "," + translateY + ")");
+        // move tooltip div
+        $('#mytooltip').detach();
+
         zoomListener.scale(zoomListener.scale());
         zoomListener.translate([translateX, translateY]);
         panTimer = setTimeout(function() {
@@ -343,8 +346,9 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 12");
+    console.log("build 13");
     //var tooltipDivElement = tooltipDiv[0][0];
+    $('body').append('#mytooltip');
     var tooltipDivElement = $('#mytooltip')[0];
     // tooltipDivElement.transition()
     //   .duration(500)
