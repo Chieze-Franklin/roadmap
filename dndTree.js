@@ -351,19 +351,23 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 19");
+    console.log("build 20");
     tooltipDivElement.style.left = `${d3.event.pageX - 25}px`;
     tooltipDivElement.style.top = `${d3.event.pageY - 10}px`;
 
+    var linksHtml = d.links ? d.links.map(l => `<li>${l}</li>`) : '';
     var titleB = `<b>${d.name}</b>`;
     var titleP = `<p class="title">${titleB}</p>`;
-    var infoDiv = `<div class="information">${d.description || ''}</div>`;
+    var innerLinksDiv = `<div class="disclaimer">links: ${d.links? `<ul>${linksHtml}</ul>`: ''}</div>`;
+    var linksDiv = `<div><br />${innerLinksDiv}</div>`;
+    var infoDiv = `<div class="information">${d.description || ''} ${linksDiv}</div>`;
     var tooltipDiv = `<div class="tooltip-module">
     ${titleP}
     <br />
     ${infoDiv}
     </div>`;
 
+    console.log(tooltipDiv);
     tooltip.updateTitleContent(tooltipDiv);
     tooltip.show();
   }
