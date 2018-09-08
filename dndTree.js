@@ -4,6 +4,13 @@
 
 treeJSON = d3.json("roadmap.json", function(error, treeData) {
 
+  // tooltip
+  var tooltipDivElement = $('#mytooltip')[0];
+  var tooltip = new Tooltip(tooltipDivElement, {
+    title: "Roadmap",
+    trigger: "hover",
+  });
+
   // Calculate total nodes, max label length
   var totalNodes = 0;
   var maxLabelLength = 0;
@@ -83,9 +90,6 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
         scale = zoomListener.scale();
         svgGroup.transition().attr("transform", "translate(" + translateX + "," + translateY + ")scale(" + scale + ")");
         d3.select(domNode).select('g.node').attr("transform", "translate(" + translateX + "," + translateY + ")");
-        // move tooltip div
-        $('#mytooltip').remove();
-
         zoomListener.scale(zoomListener.scale());
         zoomListener.translate([translateX, translateY]);
         panTimer = setTimeout(function() {
@@ -346,10 +350,9 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 14");
+    console.log("build 15");
     //var tooltipDivElement = tooltipDiv[0][0];
-    $('body').append('#mytooltip');
-    var tooltipDivElement = $('#mytooltip')[0];
+    //var tooltipDivElement = $('#mytooltip')[0];
     // tooltipDivElement.transition()
     //   .duration(500)
     //   .style('opacity', 0);
@@ -359,15 +362,12 @@ dragListener = d3.behavior.drag()
     // tooltipDivElement.html(`<a href=${d.name}></a>`)
     //   .style("left", (d3.event.pageX) + "px")
     //   .style("top", (d3.event.pageY - 28) + "px");
-    tooltipDivElement.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;';
+    //tooltipDivElement.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;';
     tooltipDivElement.style.left = `${d3.event.pageX - 30}px`;
     tooltipDivElement.style.top = `${d3.event.pageY - 15}px`;
 
-    var instance = new Tooltip(tooltipDivElement, {
-      title: d.name,
-      trigger: "hover",
-    });
-    instance.show();
+    tooltip.updateTitleContent(d.name);
+    tooltip.show();
   }
 
   function mouseout(d) {
