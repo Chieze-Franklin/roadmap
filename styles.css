@@ -37,6 +37,35 @@
     display: none;
 }
 
+.tooltip-module {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    background: #fff;
+    color: #333;
+    border: 1px solid #bfbcbc;
+    padding: 25px;
+    left: 0;
+    min-width: 325px;
+    z-index: 10;
+    text-align: left;
+}
+
+.tooltip-module .information {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 div.mytooltip {
     position: absolute;	
     text-align: center;	
