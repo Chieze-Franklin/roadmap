@@ -408,6 +408,12 @@ function update(source) {
           return d._children ? "lightsteelblue" : "#fff";
       });
 
+  // tooltip
+  var tootltip = $('<span class="tooltiptext"></span>')
+    .text(function(d) {
+      return d.description;
+    });
+
   nodeEnter.append("text")
       .attr("x", function(d) {
           return d.children || d._children ? -10 : 10;
@@ -422,7 +428,7 @@ function update(source) {
           return d.name;
       })
       .style("fill-opacity", 0)
-      .append(`<span class='tooltiptext'>${d.description}</span>`);
+      .append(tootltip);
 
   // phantom node to give us mouseover in a radius around it
   nodeEnter.append("circle")
