@@ -411,7 +411,11 @@ function update(source) {
       })
       .on('click', click)
       .on('mouseout', mouseout)
-      .on('mouseover', mouseover);
+      .on('mouseover', mouseover)
+      .append("svg:title")
+      .text(function(d) {
+        return d.name;
+      })
 
   nodeEnter.append("circle")
       .attr('class', 'nodeCircle')
