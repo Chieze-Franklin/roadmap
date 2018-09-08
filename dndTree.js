@@ -347,7 +347,7 @@ dragListener = d3.behavior.drag()
     console.log(d);
     var element = $(`#${d.id}`);
     console.log(element);
-    const tooltip = new Tooltip(referenceElement, {
+    const tooltip = new Tooltip(element, {
       title: d.desciption + '\n\n' + d.links.join('\n')
     });
     tooltip.show();
