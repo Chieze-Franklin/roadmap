@@ -84,7 +84,7 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
         svgGroup.transition().attr("transform", "translate(" + translateX + "," + translateY + ")scale(" + scale + ")");
         d3.select(domNode).select('g.node').attr("transform", "translate(" + translateX + "," + translateY + ")");
         // move tooltip div
-        $('#mytooltip').detach();
+        $('#mytooltip').remove();
 
         zoomListener.scale(zoomListener.scale());
         zoomListener.translate([translateX, translateY]);
@@ -346,7 +346,7 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 13");
+    console.log("build 14");
     //var tooltipDivElement = tooltipDiv[0][0];
     $('body').append('#mytooltip');
     var tooltipDivElement = $('#mytooltip')[0];
