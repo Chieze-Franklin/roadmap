@@ -351,7 +351,7 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 22");
+    console.log("build 23");
     tooltipDivElement.style.left = `${d3.event.pageX - 25}px`;
     tooltipDivElement.style.top = `${d3.event.pageY - 10}px`;
 

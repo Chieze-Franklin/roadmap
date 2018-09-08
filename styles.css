@@ -37,8 +37,7 @@
     display: none;
 }
 
-/*.tooltip-module {
-    opacity: 0;
+.tooltip-module {
     position: absolute;
     top: 0;
     box-sizing: border-box;
@@ -51,7 +50,7 @@
     z-index: 10;
     text-align: left;
 }
-
+/*
 .tooltip-module .information {
     font-weight: normal;
     margin: 0;
