@@ -344,12 +344,14 @@ dragListener = d3.behavior.drag()
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
     //if (d.description) alert(d.description);
-    console.log(d);
     var jqElement = $(`#${d.id}`);
-    console.log(jqElement);
-    console.log(jqElement[0]);
-    const tooltip = new Tooltip(jqElement[0], {
-      title: d.desciption + '\n\n' + d.links.join('\n'),
+    //console.log(jqElement);
+    //console.log(jqElement[0]);
+    var element = document.getElementById(d.id);
+    console.log(element);
+    const tooltip = new Tooltip(element, {
+      //title: d.desciption + '\n\n' + d.links.join('\n'),
+      title: "yayyyyyyyyyyy",
       trigger: 'manual'
     });
     tooltip.show();
@@ -357,7 +359,6 @@ dragListener = d3.behavior.drag()
 
   function mouseout(d) {
     if (d3.event.defaultPrevented) return; // mouseout suppressed
-    console.log(d);
   }
 
 function update(source) {
