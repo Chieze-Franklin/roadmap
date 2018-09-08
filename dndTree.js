@@ -343,8 +343,10 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    if (d.description) alert(d.description);
+    //if (d.description) alert(d.description);
     console.log(d);
+    var element = $(`#${d.id}`);
+    console.log(element);
   }
 
   function mouseout(d) {
