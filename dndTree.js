@@ -1,5 +1,7 @@
 /*
-* http://bl.ocks.org/robschmuecker/7880033
+* d3.js tree data: http://bl.ocks.org/robschmuecker/7880033
+* popper tooltip doc: https://popper.js.org/tooltip-documentation.html
+* popper github repo: https://github.com/FezVrasta/popper.js
 */
 
 treeJSON = d3.json("roadmap.json", function(error, treeData) {
