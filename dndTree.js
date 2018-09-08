@@ -343,7 +343,7 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 11");
+    console.log("build 12");
     //var tooltipDivElement = tooltipDiv[0][0];
     var tooltipDivElement = $('#mytooltip')[0];
     // tooltipDivElement.transition()
@@ -359,7 +359,7 @@ dragListener = d3.behavior.drag()
     tooltipDivElement.style.left = `${d3.event.pageX - 30}px`;
     tooltipDivElement.style.top = `${d3.event.pageY - 15}px`;
 
-    const instance = new Tooltip(tooltipDivElement, {
+    var instance = new Tooltip(tooltipDivElement, {
       title: d.name,
       trigger: "hover",
     });

@@ -47,6 +47,6 @@ div.mytooltip {
     background: lightsteelblue;	
     border: 0px;					
     border-radius: 8px;
-    opacity: 0.1;
+    opacity: 0;
    /*  pointer-events: none;	This line needs to be removed */      
 }
