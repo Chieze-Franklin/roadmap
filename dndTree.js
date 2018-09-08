@@ -409,16 +409,18 @@ function update(source) {
       .attr("transform", function(d) {
           return "translate(" + source.y0 + "," + source.x0 + ")";
       })
-      .append('svg:title') // svg tooltip
-      .text(function(d) { // text that will appear in tooltip
-        var tooltipText = d.name;
-        if (d.description) tooltipText += d.description + '\n\n';
-        if (d.links) tooltipText += d.links.join('\n');
-        return d.name;
-      })
       .on('click', click)
       .on('mouseout', mouseout)
       .on('mouseover', mouseover);
+
+  nodeEnter
+  .append('svg:title') // svg tooltip
+  .text(function(d) { // text that will appear in tooltip
+    var tooltipText = d.name;
+    if (d.description) tooltipText += d.description + '\n\n';
+    if (d.links) tooltipText += d.links.join('\n');
+    return d.name;
+  })
 
   nodeEnter.append("circle")
       .attr('class', 'nodeCircle')
