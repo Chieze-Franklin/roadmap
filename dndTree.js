@@ -411,11 +411,7 @@ function update(source) {
       })
       .on('click', click)
       .on('mouseout', mouseout)
-      .on('mouseover', mouseover)
-      .append("svg:title")
-      .text(function(d) {
-        return d.name;
-      })
+      .on('mouseover', mouseover);
 
   nodeEnter.append("circle")
       .attr('class', 'nodeCircle')
@@ -451,6 +447,11 @@ function update(source) {
       .on("mouseout", function(node) {
         outCircle(node);
     });
+
+    nodeEnter.append("svg:title")
+    .text(function(d) {
+      return d.name;
+    })
 
 // Update the text to reflect whether node has children or not.
 node.select('text')
