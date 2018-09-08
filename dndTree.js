@@ -393,6 +393,9 @@ function update(source) {
       // Enter any new nodes at the parent's previous position.
       var nodeEnter = node.enter().append("g")
       .call(dragListener)
+      .attr("id", function(d) {
+        return d.id;
+      })
       .attr("class", "node")
       .attr("transform", function(d) {
           return "translate(" + source.y0 + "," + source.x0 + ")";
