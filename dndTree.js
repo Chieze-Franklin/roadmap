@@ -141,11 +141,6 @@ function initiateDrag(d, domNode) {
   dragStarted = null;
 }
 
-// var tooltipDiv = d3.select("body")
-//   .append("div")
-//   .attr("class", "tooltip")
-//   .style("opacity", 0.9);
-
 // define the baseSvg, attaching a class for styling and the zoomListener
 var baseSvg = d3.select("#tree-container").append("svg")
   .attr("width", viewerWidth)
@@ -348,7 +343,7 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 9");
+    console.log("build 10");
     //var tooltipDivElement = tooltipDiv[0][0];
     var tooltipDivElement = $('#tooltip')[0];
     // tooltipDivElement.transition()
@@ -363,6 +358,12 @@ dragListener = d3.behavior.drag()
     tooltipDivElement.innerHTML = `<a href="https://${d.name}">${d.name}</a>`;
     tooltipDivElement.style.left = `${d3.event.pageX}px`;
     tooltipDivElement.style.top = `${d3.event.pageY - 28}px`;
+
+    const instance = new Tooltip(tooltipDivElement, {
+      title: d.name,
+      trigger: "hover",
+    });
+    instance.show();
   }
 
   function mouseout(d) {
