@@ -141,6 +141,11 @@ function initiateDrag(d, domNode) {
   dragStarted = null;
 }
 
+var tooltipDiv = d3.select("body")
+  .append("div")
+  .attr("class", "tooltip")
+  .style("opacity", 0);
+
 // define the baseSvg, attaching a class for styling and the zoomListener
 var baseSvg = d3.select("#tree-container").append("svg")
   .attr("width", viewerWidth)
@@ -343,18 +348,7 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    //if (d.description) alert(d.description);
-    var jqElement = $(`#${d.id}`);
-    console.log(jqElement);
-    //console.log(jqElement[0]);
-    //var element = document.getElementById(d.id);
-    //console.log(element);
-    const tooltip = new Tooltip(jqElement.context.body, {
-      //title: d.desciption + '\n\n' + d.links.join('\n'),
-      title: "yayyyyyyyyyyy",
-      trigger: 'click hover focus'
-    });
-    tooltip.show();
+    console.log(tooltipDiv);
   }
 
   function mouseout(d) {
