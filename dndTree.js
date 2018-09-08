@@ -349,6 +349,9 @@ dragListener = d3.behavior.drag()
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
     console.log(tooltipDiv);
+    console.log(tooltipDiv[0]);
+    console.log(tooltipDiv[0][0]);
+    var tooltipDivElement = tooltipDiv[0][0];
   }
 
   function mouseout(d) {
