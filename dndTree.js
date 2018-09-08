@@ -345,11 +345,11 @@ dragListener = d3.behavior.drag()
     if (d3.event.defaultPrevented) return; // mouseover suppressed
     //if (d.description) alert(d.description);
     var jqElement = $(`#${d.id}`);
-    //console.log(jqElement);
+    console.log(jqElement);
     //console.log(jqElement[0]);
-    var element = document.getElementById(d.id);
-    console.log(element);
-    const tooltip = new Tooltip(element, {
+    //var element = document.getElementById(d.id);
+    //console.log(element);
+    const tooltip = new Tooltip(jqElement.context.body, {
       //title: d.desciption + '\n\n' + d.links.join('\n'),
       title: "yayyyyyyyyyyy",
       trigger: 'manual'
