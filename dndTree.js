@@ -351,7 +351,6 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    console.log("build 29");
     tooltipDivElement.style.left = `${d3.event.pageX - 25}px`;
     tooltipDivElement.style.top = `${d3.event.pageY - 10}px`;
 
@@ -425,15 +424,6 @@ function update(source) {
       .on('click', click)
       .on('mouseout', mouseout)
       .on('mouseover', mouseover);
-
-  nodeEnter
-  .append('svg:title') // svg tooltip
-  .text(function(d) { // text that will appear in tooltip
-    var tooltipText = d.name;
-    if (d.description) tooltipText += '\n\n' + d.description;
-    if (d.links) tooltipText += '\n\n' + d.links.join('\n');
-    return tooltipText;
-  })
 
   nodeEnter.append("circle")
       .attr('class', 'nodeCircle')
