@@ -408,19 +408,28 @@ function update(source) {
           return d._children ? "lightsteelblue" : "#fff";
       });
 
+  // tooltip
+  var tooltip = document.createElement("span")
+  .attr('class', 'tooltiptext')
+  .text(function(d) {
+    return d.description;
+  });
+
   nodeEnter.append("text")
       .attr("x", function(d) {
           return d.children || d._children ? -10 : 10;
       })
       .attr("dy", ".35em")
       .attr('class', 'nodeText')
+      .attr('class', 'tooltip')
       .attr("text-anchor", function(d) {
           return d.children || d._children ? "end" : "start";
       })
       .text(function(d) {
           return d.name;
       })
-      .style("fill-opacity", 0);
+      .style("fill-opacity", 0)
+      .appendChild(tooltip);
 
   // phantom node to give us mouseover in a radius around it
   nodeEnter.append("circle")
