@@ -1,7 +1,7 @@
 {
     "name": "Life-Long Learning",
     "description": "This is a roadmap",
-    "links": ["https://github.com", "https://facebook.com"],
+    "links": [{"title": "gh", "url": "https://github.com"}, {"title": "fb", "url": "https://facebook.com"}],
     "children": [{
         "name": "Web",
         "children": [{
