@@ -12,10 +12,10 @@
         "name": "Anything Can Happen",
         "children": [{
             "name": "Blockchain",
-            "size": 874
+            "order": 874
         }, {
             "name": "3D Printing",
-            "size": 1486
+            "order": 1486
         }]
     }, {
         "name": "Desktop",
@@ -23,145 +23,172 @@
             "name": "Cross-Platform",
             "children": [{
                 "name": ".NET Core",
-                "size": 1983
+                "order": 1983
             }, {
                 "name": "Electron",
-                "size": 2047
+                "order": 2047
             }]
         }, {
             "name": "Mac",
-            "size": 1041
+            "order": 1041
         }, {
             "name": "Linux",
-            "size": 5176
+            "order": 5176
         }, {
             "name": "Windows",
             "children": [{
                 "name": "Console Application",
-                "size": 1983
+                "order": 1983
             }, {
                 "name": "Windows Forms Application",
-                "size": 2047
+                "order": 2047
             }, {
                 "name": "Windows Presentation Foundation",
-                "size": 2047
+                "order": 2047
             }, {
                 "name": "Universal Windows Platform",
-                "size": 2047
+                "order": 2047
             }]
         }]
     }, {
         "name": "Developer Tools",
         "children": [{
             "name": "Guidelines & Conventions",
-            "size": 1759
+            "order": 1759
         }, {
             "name": "CLI Tools",
-            "size": 2165
+            "order": 2165
         }, {
             "name": "Continuous Integration & Deployment",
             "children": [{
                 "name": "Test Runners",
-                "size": 2220
+                "order": 2220
             }]
         }, {
             "name": "Dependency Managers",
             "children": [{
                 "name": "Module Bundlers",
-                "size": 721
+                "order": 721
             }, {
                 "name": "Package Managers",
-                "size": 2220
+                "order": 2220
             }]
         }, {
             "name": "Frameworks and Libraries",
-            "size": 772
+            "order": 772
         }, {
             "name": "IDEs",
             "children": [{
                 "name": "IDE Plugins",
-                "size": 2220
+                "order": 2220
             }]
         }, {
             "name": "Languages",
-            "size": 2165
+            "order": 2165
         }, {
             "name": "Language Tools",
             "children": [{
                 "name": "Analyzers (static and dynamic)",
-                "size": 721
+                "order": 721
             }, {
                 "name": "Compilers",
-                "size": 2220
+                "order": 2220
             }, {
                 "name": "Cross-Language Communication",
-                "size": 2220
+                "order": 2220
             }, {
                 "name": "Linters",
-                "size": 2220
+                "order": 2220
             }, {
                 "name": "Parsers",
-                "size": 2220
+                "order": 2220
             }, {
                 "name": "Transpilers",
-                "size": 2220
+                "order": 2220
             }]
         }, {
             "name": "Runtime/Execution Environments",
-            "size": 2165
+            "order": 2165
         }, {
             "name": "Version Control",
-            "size": 2165
+            "order": 2165
+        }]
+    }, {
+        "name": "DevOps",
+        "children": [{
+            "name": "Shell Script",
+            "order": 2047
+        }, {
+            "name": "Mac",
+            "order": 1041
+        }, {
+            "name": "Linux",
+            "order": 5176
+        }, {
+            "name": "Windows",
+            "children": [{
+                "name": "Console Application",
+                "order": 1983
+            }, {
+                "name": "Windows Forms Application",
+                "order": 2047
+            }, {
+                "name": "Windows Presentation Foundation",
+                "order": 2047
+            }, {
+                "name": "Universal Windows Platform",
+                "order": 2047
+            }]
         }]
     }, {
         "name": "Games & Graphics",
         "children": [{
             "name": "2D Graphics",
-            "size": 1082
+            "order": 1082
         }, {
             "name": "3D Graphics",
-            "size": 1336
+            "order": 1336
         }, {
             "name": "2D Animations",
-            "size": 319
+            "order": 319
         }, {
             "name": "3D Animations",
-            "size": 10498
+            "order": 10498
         }, {
             "name": "2D Games",
-            "size": 2822
+            "order": 2822
         }, {
             "name": "3D Games",
-            "size": 9983
+            "order": 9983
         }, {
             "name": "Augmented Reality",
-            "size": 2213
+            "order": 2213
         }, {
             "name": "Virtual Reality",
-            "size": 1681
+            "order": 1681
         }]
     }, {
         "name": "Mobile & Wearable",
         "children": [{
             "name": "Android",
-            "size": 1616
+            "order": 1616
         }, {
             "name": "IOS",
-            "size": 1027
+            "order": 1027
         }, {
             "name": "Cross-Platform",
             "children": [{
                 "name": "React Native",
-                "size": 593
+                "order": 593
             }, {
                 "name": "NativeScript",
-                "size": 330
+                "order": 330
             }, {
                 "name": "Ionic",
-                "size": 287
+                "order": 287
             }, {
                 "name": "Xamarin",
-                "size": 264
+                "order": 264
             }]
         }]
     }, {
@@ -172,22 +199,22 @@
                 "name": "Android",
                 "children": [{
                         "name": "System Apps",
-                        "size": 330
+                        "order": 330
                     }, {
                         "name": "Flashing, Rooting, Unlocking...",
-                        "size": 287
+                        "order": 287
                     }, {
                         "name": "Firmware",
-                        "size": 264
+                        "order": 264
                     }, {
                         "name": "Forking Android",
-                        "size": 264
+                        "order": 264
                     }
                 ]
             }]
         }, {
             "name": "Hardware Components",
-            "size": 3151
+            "order": 3151
         }]
     }, {
         "name": "vis",
@@ -195,124 +222,124 @@
             "name": "axis",
             "children": [{
                 "name": "Axes",
-                "size": 1302
+                "order": 1302
             }, {
                 "name": "Axis",
-                "size": 24593
+                "order": 24593
             }, {
                 "name": "AxisGridLine",
-                "size": 652
+                "order": 652
             }, {
                 "name": "AxisLabel",
-                "size": 636
+                "order": 636
             }, {
                 "name": "CartesianAxes",
-                "size": 6703
+                "order": 6703
             }]
         }, {
             "name": "controls",
             "children": [{
                 "name": "AnchorControl",
-                "size": 2138
+                "order": 2138
             }, {
                 "name": "ClickControl",
-                "size": 3824
+                "order": 3824
             }, {
                 "name": "Control",
-                "size": 1353
+                "order": 1353
             }, {
                 "name": "ControlList",
-                "size": 4665
+                "order": 4665
             }, {
                 "name": "DragControl",
-                "size": 2649
+                "order": 2649
             }, {
                 "name": "ExpandControl",
-                "size": 2832
+                "order": 2832
             }, {
                 "name": "HoverControl",
-                "size": 4896
+                "order": 4896
             }, {
                 "name": "IControl",
-                "size": 763
+                "order": 763
             }, {
                 "name": "PanZoomControl",
-                "size": 5222
+                "order": 5222
             }, {
                 "name": "SelectionControl",
-                "size": 7862
+                "order": 7862
             }, {
                 "name": "TooltipControl",
-                "size": 8435
+                "order": 8435
             }]
         }, {
             "name": "data",
             "children": [{
                 "name": "Data",
-                "size": 20544
+                "order": 20544
             }, {
                 "name": "DataList",
-                "size": 19788
+                "order": 19788
             }, {
                 "name": "DataSprite",
-                "size": 10349
+                "order": 10349
             }, {
                 "name": "EdgeSprite",
-                "size": 3301
+                "order": 3301
             }, {
                 "name": "NodeSprite",
-                "size": 19382
+                "order": 19382
             }, {
                 "name": "render",
                 "children": [{
                     "name": "ArrowType",
-                    "size": 698
+                    "order": 698
                 }, {
                     "name": "EdgeRenderer",
-                    "size": 5569
+                    "order": 5569
                 }, {
                     "name": "IRenderer",
-                    "size": 353
+                    "order": 353
                 }, {
                     "name": "ShapeRenderer",
-                    "size": 2247
+                    "order": 2247
                 }]
             }, {
                 "name": "ScaleBinding",
-                "size": 11275
+                "order": 11275
             }, {
                 "name": "Tree",
-                "size": 7147
+                "order": 7147
             }, {
                 "name": "TreeBuilder",
-                "size": 9930
+                "order": 9930
             }]
         }, {
             "name": "events",
             "children": [{
                 "name": "DataEvent",
-                "size": 2313
+                "order": 2313
             }, {
                 "name": "SelectionEvent",
-                "size": 1880
+                "order": 1880
             }, {
                 "name": "TooltipEvent",
-                "size": 1701
+                "order": 1701
             }, {
                 "name": "VisualizationEvent",
-                "size": 1117
+                "order": 1117
             }]
         }, {
             "name": "legend",
             "children": [{
                 "name": "Legend",
-                "size": 20859
+                "order": 20859
             }, {
                 "name": "LegendItem",
-                "size": 4614
+                "order": 4614
             }, {
                 "name": "LegendRange",
-                "size": 10530
+                "order": 10530
             }]
         }, {
             "name": "operator",
@@ -320,126 +347,126 @@
                 "name": "distortion",
                 "children": [{
                     "name": "BifocalDistortion",
-                    "size": 4461
+                    "order": 4461
                 }, {
                     "name": "Distortion",
-                    "size": 6314
+                    "order": 6314
                 }, {
                     "name": "FisheyeDistortion",
-                    "size": 3444
+                    "order": 3444
                 }]
             }, {
                 "name": "encoder",
                 "children": [{
                     "name": "ColorEncoder",
-                    "size": 3179
+                    "order": 3179
                 }, {
                     "name": "Encoder",
-                    "size": 4060
+                    "order": 4060
                 }, {
                     "name": "PropertyEncoder",
-                    "size": 4138
+                    "order": 4138
                 }, {
                     "name": "ShapeEncoder",
-                    "size": 1690
+                    "order": 1690
                 }, {
                     "name": "SizeEncoder",
-                    "size": 1830
+                    "order": 1830
                 }]
             }, {
                 "name": "filter",
                 "children": [{
                     "name": "FisheyeTreeFilter",
-                    "size": 5219
+                    "order": 5219
                 }, {
                     "name": "GraphDistanceFilter",
-                    "size": 3165
+                    "order": 3165
                 }, {
                     "name": "VisibilityFilter",
-                    "size": 3509
+                    "order": 3509
                 }]
             }, {
                 "name": "IOperator",
-                "size": 1286
+                "order": 1286
             }, {
                 "name": "label",
                 "children": [{
                     "name": "Labeler",
-                    "size": 9956
+                    "order": 9956
                 }, {
                     "name": "RadialLabeler",
-                    "size": 3899
+                    "order": 3899
                 }, {
                     "name": "StackedAreaLabeler",
-                    "size": 3202
+                    "order": 3202
                 }]
             }, {
                 "name": "layout",
                 "children": [{
                     "name": "AxisLayout",
-                    "size": 6725
+                    "order": 6725
                 }, {
                     "name": "BundledEdgeRouter",
-                    "size": 3727
+                    "order": 3727
                 }, {
                     "name": "CircleLayout",
-                    "size": 9317
+                    "order": 9317
                 }, {
                     "name": "CirclePackingLayout",
-                    "size": 12003
+                    "order": 12003
                 }, {
                     "name": "DendrogramLayout",
-                    "size": 4853
+                    "order": 4853
                 }, {
                     "name": "ForceDirectedLayout",
-                    "size": 8411
+                    "order": 8411
                 }, {
                     "name": "IcicleTreeLayout",
-                    "size": 4864
+                    "order": 4864
                 }, {
                     "name": "IndentedTreeLayout",
-                    "size": 3174
+                    "order": 3174
                 }, {
                     "name": "Layout",
-                    "size": 7881
+                    "order": 7881
                 }, {
                     "name": "NodeLinkTreeLayout",
-                    "size": 12870
+                    "order": 12870
                 }, {
                     "name": "PieLayout",
-                    "size": 2728
+                    "order": 2728
                 }, {
                     "name": "RadialTreeLayout",
-                    "size": 12348
+                    "order": 12348
                 }, {
                     "name": "RandomLayout",
-                    "size": 870
+                    "order": 870
                 }, {
                     "name": "StackedAreaLayout",
-                    "size": 9121
+                    "order": 9121
                 }, {
                     "name": "TreeMapLayout",
-                    "size": 9191
+                    "order": 9191
                 }]
             }, {
                 "name": "Operator",
-                "size": 2490
+                "order": 2490
             }, {
                 "name": "OperatorList",
-                "size": 5248
+                "order": 5248
             }, {
                 "name": "OperatorSequence",
-                "size": 4190
+                "order": 4190
             }, {
                 "name": "OperatorSwitch",
-                "size": 2581
+                "order": 2581
             }, {
                 "name": "SortOperator",
-                "size": 2023
+                "order": 2023
             }]
         }, {
             "name": "Visualization",
-            "size": 16540
+            "order": 16540
         }]
     }, {
         "name": "Web",
@@ -447,34 +474,34 @@
             "name": "Web Servers",
             "children": [{
                 "name": "Django",
-                "size": 3938
+                "order": 3938
             }, {
                 "name": "Laravel",
-                "size": 3938
+                "order": 3938
             }, {
                 "name": "Node",
-                "size": 3938
+                "order": 3938
             }]
         }, {
             "name": "Web Design & Development",
             "children": [{
                 "name": "HTML",
-                "size": 3534
+                "order": 3534
             }, {
                 "name": "CSS",
-                "size": 5731
+                "order": 5731
             }, {
                 "name": "React",
-                "size": 7840
+                "order": 7840
             }, {
                 "name": "Angular",
-                "size": 5914
+                "order": 5914
             }, {
                 "name": "Vue",
-                "size": 3416
+                "order": 3416
             }, {
                 "name": "Wordpress",
-                "size": 3416
+                "order": 3416
             }]
         }]
     }]
