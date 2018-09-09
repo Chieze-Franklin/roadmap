@@ -64,11 +64,12 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
       return d.children && d.children.length > 0 ? d.children : null;
   });
 
-  // sort the tree according to the node names
+  // sort the tree according to the node 'index'
 
   function sortTree() {
     tree.sort(function(a, b) {
-        return b.name.toLowerCase() < a.name.toLowerCase() ? 1 : -1;
+        // return b.name.toLowerCase() < a.name.toLowerCase() ? 1 : -1;
+        return (b.index || 0) < (a.index || 0) ? 1 : -1;
     });
   }
   // Sort the tree initially incase the JSON isn't in a sorted order.
