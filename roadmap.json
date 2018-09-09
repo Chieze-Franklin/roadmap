@@ -183,13 +183,6 @@
             }]
         }]
     }, {
-        "name": "Embedded Systems, IoT & Robotics",
-        "children": [{
-            "name": "Arduino"
-        }, {
-            "name": "Raspberry Pi"
-        }]
-    }, {
         "name": "Games & Graphics",
         "children": [{
             "name": "2D Graphics",
@@ -264,6 +257,14 @@
         }, {
             "name": "Hardware Components",
             "index": 3151
+        }]
+    }, {
+        "name": "Robotics & IoT",
+        "index": 7,
+        "children": [{
+            "name": "Arduino"
+        }, {
+            "name": "Raspberry Pi"
         }]
     }, {
         "name": "Web",
