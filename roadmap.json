@@ -142,6 +142,13 @@
             }]
         }]
     }, {
+        "name": "Embedded Systems, IoT & Robotics",
+        "children": [{
+            "name": "Arduino"
+        }, {
+            "name": "Raspberry Pi"
+        }]
+    }, {
         "name": "Games & Graphics",
         "children": [{
             "name": "2D Graphics",
@@ -169,7 +176,7 @@
             "index": 1681
         }]
     }, {
-        "name": "Mobile & Wearable",
+        "name": "Mobile & Wearables",
         "children": [{
             "name": "Android",
             "index": 1616
@@ -218,274 +225,40 @@
             "index": 3151
         }]
     }, {
-        "name": "vis",
-        "children": [{
-            "name": "axis",
-            "children": [{
-                "name": "Axes",
-                "index": 1302
-            }, {
-                "name": "Axis",
-                "index": 24593
-            }, {
-                "name": "AxisGridLine",
-                "index": 652
-            }, {
-                "name": "AxisLabel",
-                "index": 636
-            }, {
-                "name": "CartesianAxes",
-                "index": 6703
-            }]
-        }, {
-            "name": "controls",
-            "children": [{
-                "name": "AnchorControl",
-                "index": 2138
-            }, {
-                "name": "ClickControl",
-                "index": 3824
-            }, {
-                "name": "Control",
-                "index": 1353
-            }, {
-                "name": "ControlList",
-                "index": 4665
-            }, {
-                "name": "DragControl",
-                "index": 2649
-            }, {
-                "name": "ExpandControl",
-                "index": 2832
-            }, {
-                "name": "HoverControl",
-                "index": 4896
-            }, {
-                "name": "IControl",
-                "index": 763
-            }, {
-                "name": "PanZoomControl",
-                "index": 5222
-            }, {
-                "name": "SelectionControl",
-                "index": 7862
-            }, {
-                "name": "TooltipControl",
-                "index": 8435
-            }]
-        }, {
-            "name": "data",
-            "children": [{
-                "name": "Data",
-                "index": 20544
-            }, {
-                "name": "DataList",
-                "index": 19788
-            }, {
-                "name": "DataSprite",
-                "index": 10349
-            }, {
-                "name": "EdgeSprite",
-                "index": 3301
-            }, {
-                "name": "NodeSprite",
-                "index": 19382
-            }, {
-                "name": "render",
-                "children": [{
-                    "name": "ArrowType",
-                    "index": 698
-                }, {
-                    "name": "EdgeRenderer",
-                    "index": 5569
-                }, {
-                    "name": "IRenderer",
-                    "index": 353
-                }, {
-                    "name": "ShapeRenderer",
-                    "index": 2247
-                }]
-            }, {
-                "name": "ScaleBinding",
-                "index": 11275
-            }, {
-                "name": "Tree",
-                "index": 7147
-            }, {
-                "name": "TreeBuilder",
-                "index": 9930
-            }]
-        }, {
-            "name": "events",
-            "children": [{
-                "name": "DataEvent",
-                "index": 2313
-            }, {
-                "name": "SelectionEvent",
-                "index": 1880
-            }, {
-                "name": "TooltipEvent",
-                "index": 1701
-            }, {
-                "name": "VisualizationEvent",
-                "index": 1117
-            }]
-        }, {
-            "name": "legend",
-            "children": [{
-                "name": "Legend",
-                "index": 20859
-            }, {
-                "name": "LegendItem",
-                "index": 4614
-            }, {
-                "name": "LegendRange",
-                "index": 10530
-            }]
-        }, {
-            "name": "operator",
-            "children": [{
-                "name": "distortion",
-                "children": [{
-                    "name": "BifocalDistortion",
-                    "index": 4461
-                }, {
-                    "name": "Distortion",
-                    "index": 6314
-                }, {
-                    "name": "FisheyeDistortion",
-                    "index": 3444
-                }]
-            }, {
-                "name": "encoder",
-                "children": [{
-                    "name": "ColorEncoder",
-                    "index": 3179
-                }, {
-                    "name": "Encoder",
-                    "index": 4060
-                }, {
-                    "name": "PropertyEncoder",
-                    "index": 4138
-                }, {
-                    "name": "ShapeEncoder",
-                    "index": 1690
-                }, {
-                    "name": "SizeEncoder",
-                    "index": 1830
-                }]
-            }, {
-                "name": "filter",
-                "children": [{
-                    "name": "FisheyeTreeFilter",
-                    "index": 5219
-                }, {
-                    "name": "GraphDistanceFilter",
-                    "index": 3165
-                }, {
-                    "name": "VisibilityFilter",
-                    "index": 3509
-                }]
-            }, {
-                "name": "IOperator",
-                "index": 1286
-            }, {
-                "name": "label",
-                "children": [{
-                    "name": "Labeler",
-                    "index": 9956
-                }, {
-                    "name": "RadialLabeler",
-                    "index": 3899
-                }, {
-                    "name": "StackedAreaLabeler",
-                    "index": 3202
-                }]
-            }, {
-                "name": "layout",
-                "children": [{
-                    "name": "AxisLayout",
-                    "index": 6725
-                }, {
-                    "name": "BundledEdgeRouter",
-                    "index": 3727
-                }, {
-                    "name": "CircleLayout",
-                    "index": 9317
-                }, {
-                    "name": "CirclePackingLayout",
-                    "index": 12003
-                }, {
-                    "name": "DendrogramLayout",
-                    "index": 4853
-                }, {
-                    "name": "ForceDirectedLayout",
-                    "index": 8411
-                }, {
-                    "name": "IcicleTreeLayout",
-                    "index": 4864
-                }, {
-                    "name": "IndentedTreeLayout",
-                    "index": 3174
-                }, {
-                    "name": "Layout",
-                    "index": 7881
-                }, {
-                    "name": "NodeLinkTreeLayout",
-                    "index": 12870
-                }, {
-                    "name": "PieLayout",
-                    "index": 2728
-                }, {
-                    "name": "RadialTreeLayout",
-                    "index": 12348
-                }, {
-                    "name": "RandomLayout",
-                    "index": 870
-                }, {
-                    "name": "StackedAreaLayout",
-                    "index": 9121
-                }, {
-                    "name": "TreeMapLayout",
-                    "index": 9191
-                }]
-            }, {
-                "name": "Operator",
-                "index": 2490
-            }, {
-                "name": "OperatorList",
-                "index": 5248
-            }, {
-                "name": "OperatorSequence",
-                "index": 4190
-            }, {
-                "name": "OperatorSwitch",
-                "index": 2581
-            }, {
-                "name": "SortOperator",
-                "index": 2023
-            }]
-        }, {
-            "name": "Visualization",
-            "index": 16540
-        }]
-    }, {
         "name": "Web",
         "index": 1,
         "children": [{
-            "name": "Web Servers",
+            "name": "Back-End",
+            "index": 1,
             "children": [{
-                "name": "Django",
-                "index": 3938
+                "name": "Web API",
+                "index": 1,
+                "links": [{
+                    "title": "JSON API",
+                    "url": "http://jsonapi.org/"
+                }, {
+                    "title": "How To GraphQL",
+                    "url": "https://www.howtographql.com/basics/0-introduction/"
+                }]
             }, {
-                "name": "Laravel",
-                "index": 3938
-            }, {
-                "name": "Node",
-                "index": 3938
+                "name": "Web Servers",
+                "children": [{
+                    "name": "Django",
+                    "index": 3938
+                }, {
+                    "name": "Laravel",
+                    "index": 3938
+                }, {
+                    "name": "Node",
+                    "index": 3938
+                }]
             }]
         }, {
             "name": "Web Design & Development",
+            "links": [{
+                "title": "Frontend Masters - Your Path to Becoming a Career-Ready Web Developer!",
+                "url": "https://frontendmasters.com/learn/beginner/"
+            }],
             "children": [{
                 "name": "HTML",
                 "index": 3534
