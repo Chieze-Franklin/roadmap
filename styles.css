@@ -68,13 +68,13 @@ p {
 div.mytooltip {
     position: absolute;	
     text-align: center;	
-    width: 50px;	
-    height: 20px;
+    width: 25px;	
+    height: 15px;
     padding: 2px;	
     font: 12px sans-serif;	
     background: lightsteelblue;	
     border: 0px;					
     border-radius: 8px;
-    opacity: 0.5;
+    opacity: 0.9;
    /*  pointer-events: none;	This line needs to be removed */      
 }

@@ -10,6 +10,7 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
   var tooltipDivElement = $('#mytooltip')[0];
   var tooltip = new Tooltip(tooltipDivElement, {
     html: true,
+    placement: 'bottom',
     title: "Roadmap",
     trigger: "hover",
   });
@@ -354,8 +355,8 @@ dragListener = d3.behavior.drag()
 
   function mouseover(d) {
     if (d3.event.defaultPrevented) return; // mouseover suppressed
-    tooltipDivElement.style.left = `${d3.event.pageX - 25}px`;
-    tooltipDivElement.style.top = `${d3.event.pageY - 10}px`;
+    tooltipDivElement.style.left = `${d3.event.pageX - 30}px`;
+    tooltipDivElement.style.top = `${d3.event.pageY - 7}px`;
 
     var linksHtml = d.links ? d.links.map(l => `<li><a href="${l.url}">${l.title}</a></li>`) : '';
     var titleB = `<b>${d.name}</b>`;
