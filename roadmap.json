@@ -9,31 +9,13 @@
             "url": "https://github.com/Chieze-Franklin/life-long-learning"
         }],
     "children": [{
-        "name": "Web",
+        "name": "Anything Can Happen",
         "children": [{
-            "name": "Back-End",
-            "children": [{
-                "name": "DevOps",
-                "size": 3938
-            }]
+            "name": "Blockchain",
+            "size": 874
         }, {
-            "name": "Front-End",
-            "children": [{
-                "name": "BetweennessCentrality",
-                "size": 3534
-            }, {
-                "name": "LinkDistance",
-                "size": 5731
-            }, {
-                "name": "MaxFlowMinCut",
-                "size": 7840
-            }, {
-                "name": "ShortestPaths",
-                "size": 5914
-            }, {
-                "name": "SpanningTree",
-                "size": 3416
-            }]
+            "name": "3D Printing",
+            "size": 1486
         }]
     }, {
         "name": "Desktop",
@@ -460,13 +442,40 @@
             "size": 16540
         }]
     }, {
-        "name": "Anything Can Happen",
+        "name": "Web",
         "children": [{
-            "name": "Blockchain",
-            "size": 874
+            "name": "Web Servers",
+            "children": [{
+                "name": "Django",
+                "size": 3938
+            }, {
+                "name": "Laravel",
+                "size": 3938
+            }, {
+                "name": "Node",
+                "size": 3938
+            }]
         }, {
-            "name": "3D Printing",
-            "size": 1486
+            "name": "Web Design & Development",
+            "children": [{
+                "name": "HTML",
+                "size": 3534
+            }, {
+                "name": "CSS",
+                "size": 5731
+            }, {
+                "name": "React",
+                "size": 7840
+            }, {
+                "name": "Angular",
+                "size": 5914
+            }, {
+                "name": "Vue",
+                "size": 3416
+            }, {
+                "name": "Wordpress",
+                "size": 3416
+            }]
         }]
     }]
 }
