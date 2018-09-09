@@ -208,15 +208,6 @@
             "size": 3151
         }]
     }, {
-        "name": "Anything Can Happen",
-        "children": [{
-            "name": "Blockchain",
-            "size": 874
-        }, {
-            "name": "3D Printing",
-            "size": 1486
-        }]
-    }, {
         "name": "vis",
         "children": [{
             "name": "axis",
@@ -467,6 +458,15 @@
         }, {
             "name": "Visualization",
             "size": 16540
+        }]
+    }, {
+        "name": "Anything Can Happen",
+        "children": [{
+            "name": "Blockchain",
+            "size": 874
+        }, {
+            "name": "3D Printing",
+            "size": 1486
         }]
     }]
 }
