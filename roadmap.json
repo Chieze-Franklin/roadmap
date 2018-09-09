@@ -123,29 +123,35 @@
         }]
     }, {
         "name": "DevOps",
+        "index": 9,
         "children": [{
-            "name": "Shell Script",
-            "index": 2047
-        }, {
-            "name": "Mac",
-            "index": 1041
-        }, {
-            "name": "Linux",
-            "index": 5176
-        }, {
-            "name": "Windows",
+            "name": "Cloud Platforms",
+            "index": 2,
             "children": [{
-                "name": "Console Application",
-                "index": 1983
+                "name": "AWS",
+                "index": 2
             }, {
-                "name": "Windows Forms Application",
-                "index": 2047
+                "name": "Azure",
+                "index": 4
             }, {
-                "name": "Windows Presentation Foundation",
-                "index": 2047
+                "name": "GCP",
+                "index": 3
             }, {
-                "name": "Universal Windows Platform",
-                "index": 2047
+                "name": "Heroku",
+                "index": 1
+            }]
+        }, {
+            "name": "Shell Script",
+            "index": 1,
+            "children": [{
+                "name": "Linux",
+                "index": 2
+            }, {
+                "name": "Mac",
+                "index": 3
+            }, {
+                "name": "Windows",
+                "index": 1
             }]
         }]
     }, {
