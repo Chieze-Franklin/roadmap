@@ -1,7 +1,13 @@
 {
     "name": "Life-Long Learning",
-    "description": "This is a roadmap",
-    "links": [{"title": "gh", "url": "https://github.com"}, {"title": "fb", "url": "https://facebook.com"}],
+    "description": "This is a visualization of my learning roadmap as a life-long learner.",
+    "links": [{
+        "title": "github repo for this project",
+        "url": "https://github.com/Chieze-Franklin/roadmap"
+        }, {
+            "title": "github repo for life-long learning",
+            "url": "https://github.com/Chieze-Franklin/life-long-learning"
+        }],
     "children": [{
         "name": "Web",
         "children": [{
