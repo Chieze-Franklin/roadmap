@@ -4,9 +4,6 @@
     "links": [{
         "title": "github repo for this project",
         "url": "https://github.com/Chieze-Franklin/roadmap"
-        }, {
-            "title": "github repo for life-long learning",
-            "url": "https://github.com/Chieze-Franklin/life-long-learning"
         }],
     "children": [{
         "name": "Anything Can Happen",
@@ -17,14 +14,10 @@
             "name": "3D Printing"
         }]
     }, {
-        "name": "Anything Can Happen",
-        "index": 12,
+        "name": "Computer Science",
+        "index": 11,
         "children": [{
-            "name": "Blockchain",
-            "index": 874
-        }, {
-            "name": "3D Printing",
-            "index": 1486
+            "name": "Data Structures and Algorithms"
         }]
     }, {
         "name": "Desktop",
