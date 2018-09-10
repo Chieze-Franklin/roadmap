@@ -79,6 +79,7 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
   // TODO: Pan function, can be better implemented.
 
   function pan(domNode, direction) {
+    tooltip.hide();
     var speed = panSpeed;
     if (panTimer) {
         clearTimeout(panTimer);
