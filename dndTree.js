@@ -375,6 +375,7 @@ dragListener = d3.behavior.drag()
 
   function mouseout(d) {
     if (d3.event.defaultPrevented) return; // mouseout suppressed
+    tooltip.hide();
   }
 
     function update(source) {
@@ -553,15 +554,15 @@ dragListener = d3.behavior.drag()
         });
     }
 
-// Append a group which holds all nodes and which the zoom Listener can act upon.
-var svgGroup = baseSvg.append("g");
+    // Append a group which holds all nodes and which the zoom Listener can act upon.
+    var svgGroup = baseSvg.append("g");
 
-// Define the root
-root = treeData;
-root.x0 = viewerHeight / 2;
-root.y0 = 0;
+    // Define the root
+    root = treeData;
+    root.x0 = viewerHeight / 2;
+    root.y0 = 0;
 
-// Layout the tree initially and center on the root node.
-update(root);
-centerNode(root);
+    // Layout the tree initially and center on the root node.
+    update(root);
+    centerNode(root);
 });
