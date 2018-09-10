@@ -106,6 +106,7 @@ treeJSON = d3.json("roadmap.json", function(error, treeData) {
 // Define the zoom function for the zoomable tree
 function zoom() {
     svgGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+    tooltip.hide();
 }
 
 // define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
@@ -375,7 +376,6 @@ dragListener = d3.behavior.drag()
 
   function mouseout(d) {
     if (d3.event.defaultPrevented) return; // mouseout suppressed
-    tooltip.hide();
   }
 
     function update(source) {
