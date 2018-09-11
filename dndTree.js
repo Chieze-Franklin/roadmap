@@ -364,8 +364,9 @@ dragListener = d3.behavior.drag()
     var titleB = `<b>${d.name}</b>`;
     var titleP = `<p class="title">${titleB}</p>`;
     var innerLinksDiv = d.links ? `<div class="disclaimer"><ul>${linksHtml.join('')}</ul></div>` : '';
-    var linksDiv = `<div><br />${innerLinksDiv}</div>`;
-    var infoDiv = d.description ? `<hr /><div class="information">${d.description} ${linksDiv}</div>` : '';
+    var linksDiv = d.links ? `<div>${innerLinksDiv}</div>` : '';
+    var infoDiv =
+        d.description || d.links ? `<hr /><div class="information">${d.description || ''} ${linksDiv}</div>` : '';
     var tooltipDiv = `<div class="tooltip-module">
     ${titleP}
     ${infoDiv}
