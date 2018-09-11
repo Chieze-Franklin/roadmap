@@ -1,6 +1,6 @@
 {
     "name": "Life-Long Learning",
-    "description": ["This is a visualization of my learning roadmap as a life-long learner."],
+    "notes": ["This is a visualization of my learning roadmap as a life-long learner."],
     "links": [{
         "title": "github repo for this project",
         "url": "https://github.com/Chieze-Franklin/roadmap"
@@ -269,6 +269,10 @@
     }, {
         "name": "Web",
         "index": 1,
+        "links": [{
+            "title": "Web Developer Roadmap - 2018",
+            "url": "https://github.com/kamranahmedse/developer-roadmap"
+        }],
         "children": [{
             "name": "Back-End",
             "index": 1,
@@ -296,7 +300,7 @@
                 }]
             }]
         }, {
-            "name": "Web Design & Development",
+            "name": "Front-End",
             "links": [{
                 "title": "Frontend Masters - Your Path to Becoming a Career-Ready Web Developer!",
                 "url": "https://frontendmasters.com/learn/beginner/"
@@ -309,22 +313,38 @@
                 ],
                 "children": [{
                     "name": "Basics of CSS",
+                    "notes": [
+                        "Learn the basics of CSS.",
+                        "Learn how to use Grid and Flexbox.",
+                        "Learn Media Queries and responsive web design."
+                    ],
                     "children": [{
-                        "name": "Basics of JavaScript"
+                        "name": "Basics of JavaScript",
+                        "notes": [
+                            "Learn the syntax and basic constructs.",
+                            "Learn how to manipulate the DOM.",
+                            "Understand concepts like hoisting, event bubbling, prototype...",
+                            "Learn AJAX (XHR).",
+                            "Learn ES6+ new features, and writing modular JavaScript"
+                        ],
+                        "children": [{
+                            "name": "jQuery"
+                        }, {
+                            "name": "Package Managers",
+                            "index": 1,
+                            "notes": [
+                                "Learn how to install external libraries in your web pages.",
+                                "For instance, install some toast plugin and when a user clicks a button, show a toast.",
+                                "Or create a login form and do form validation using some validation library."
+                            ],
+                            "children": [{
+                                "name": "npm"
+                            }, {
+                                "name": "yarn"
+                            }]
+                        }]
                     }]
                 }]
-            }, {
-                "name": "React",
-                "index": 7840
-            }, {
-                "name": "Angular",
-                "index": 5914
-            }, {
-                "name": "Vue",
-                "index": 3416
-            }, {
-                "name": "Wordpress",
-                "index": 3416
             }]
         }]
     }]
