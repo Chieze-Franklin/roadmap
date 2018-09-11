@@ -360,13 +360,22 @@ dragListener = d3.behavior.drag()
     tooltipDivElement.style.left = `${d3.event.pageX - 30}px`;
     tooltipDivElement.style.top = `${d3.event.pageY - 7}px`;
 
-    var linksHtml = d.links ? d.links.map(l => `<li><a href="${l.url}">${l.title}</a></li>`) : '';
+    var notesHtml =
+        d.notes && d.notes.length > 0 ?
+        d.notes.join('<br />') :
+        '';
+    var linksHtml =
+        d.links && d.links.length > 0 ?
+        d.links.map(l => `<li><a href="${l.url}">${l.title}</a></li>`) :
+        '';
     var titleB = `<b>${d.name}</b>`;
     var titleP = `<p class="title">${titleB}</p>`;
     var innerLinksDiv = d.links ? `<div class="disclaimer"><ul>${linksHtml.join('')}</ul></div>` : '';
     var linksDiv = d.links ? `<div>${innerLinksDiv}</div>` : '';
     var infoDiv =
-        d.description || d.links ? `<hr /><div class="information">${d.description || ''} ${linksDiv}</div>` : '';
+        d.notes || d.links ?
+        `<hr /><div class="information">${notesHtml} ${linksDiv}</div>` :
+        '';
     var tooltipDiv = `<div class="tooltip-module">
     ${titleP}
     ${infoDiv}

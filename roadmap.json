@@ -1,10 +1,10 @@
 {
     "name": "Life-Long Learning",
-    "description": "This is a visualization of my learning roadmap as a life-long learner.",
+    "description": ["This is a visualization of my learning roadmap as a life-long learner."],
     "links": [{
         "title": "github repo for this project",
         "url": "https://github.com/Chieze-Franklin/roadmap"
-        }],
+    }],
     "children": [{
         "name": "AI",
         "index": 8,
@@ -303,10 +303,16 @@
             }],
             "children": [{
                 "name": "HTML",
-                "index": 3534
-            }, {
-                "name": "CSS",
-                "index": 5731
+                "notes": [
+                    "Learn the basics and how to write semantic HTML.",
+                    "Learn to divide the page into sections, and to structure the DOM properly."
+                ],
+                "children": [{
+                    "name": "Basics of CSS",
+                    "children": [{
+                        "name": "Basics of JavaScript"
+                    }]
+                }]
             }, {
                 "name": "React",
                 "index": 7840
