@@ -328,7 +328,8 @@
                             "Learn ES6+ new features, and writing modular JavaScript"
                         ],
                         "children": [{
-                            "name": "jQuery"
+                            "name": "jQuery",
+                            "notes": ["optional"]
                         }, {
                             "name": "Package Managers",
                             "index": 1,
@@ -341,6 +342,23 @@
                                 "name": "npm"
                             }, {
                                 "name": "yarn"
+                            }, {
+                                "name": "CSS Preprocessors",
+                                "notes": ["Preprocessors add functionality on top of CSS."],
+                                "children": [{
+                                    "name": "Less",
+                                    "index": 2
+                                }, {
+                                    "name": "PostCSS",
+                                    "index": 3
+                                }, {
+                                    "name": "Sass",
+                                    "index": 1,
+                                    "notes": ["If you were to pick one preprocessors, I'll recommend this one."]
+                                }, {
+                                    "name": "Stylus",
+                                    "index": 4
+                                }]
                             }]
                         }]
                     }]
