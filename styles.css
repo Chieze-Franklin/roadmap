@@ -41,14 +41,14 @@
     fill: none;
     stroke: none;
     stroke-dasharray: 4 1;
-    stroke-width: 1.5px;
+    stroke-width: 1px;
 }
 
 .recommendedbranchlink {
     fill: none;
-    stroke: none;
+    stroke: black;
     stroke-dasharray: 4 1;
-    stroke-width: 1.5px;
+    stroke-width: 1px;
 }
 
 .templink {
