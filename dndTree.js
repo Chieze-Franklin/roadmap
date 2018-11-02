@@ -536,11 +536,11 @@ dragListener = d3.behavior.drag()
         link.enter().insert("path", "g")
             .attr("class", function(d) {
                 if (d.target && d.target.type === "recommended") {
-                    return "link";
+                    return "recommendedbranchlink";
                 } else if (d.target && d.target.type === "optional") {
                     return "optionalbranchlink";
                 }
-                return "recommendedbranchlink";
+                return "link";
             })
             .attr("d", function(d) {
                 var o = {
