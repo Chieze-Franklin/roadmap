@@ -35,7 +35,7 @@
     stroke-width: 1.5px;
 }
 
-.branchlink {
+.optionalbranchlink {
     fill: none;
     stroke: none;
     stroke-dasharray: 4 1;
@@ -43,13 +43,6 @@
 }
 
 .recommendedbranchlink {
-    fill: none;
-    stroke: none;
-    stroke-dasharray: 4 1;
-    stroke-width: 1.5px;
-}
-
-.optionalbranchlink {
     fill: none;
     stroke: none;
     stroke-dasharray: 4 1;

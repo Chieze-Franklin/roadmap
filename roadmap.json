@@ -330,7 +330,7 @@
                         "children": [{
                             "name": "jQuery",
                             "notes": ["optional"],
-                            "type": "branch"
+                            "type": "recommended"
                         }, {
                             "name": "Package Managers",
                             "index": 1,
