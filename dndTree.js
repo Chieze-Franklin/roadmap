@@ -536,9 +536,9 @@ dragListener = d3.behavior.drag()
         link.enter().insert("path", "g")
             .attr("class", function(d) {
                 if (d.target && d.target.type === "recommended") {
-                    return "recommendedbranchlink";
+                    return "link recommendedbranchlink";
                 } else if (d.target && d.target.type === "optional") {
-                    return "optionalbranchlink";
+                    return "link optionalbranchlink";
                 }
                 return "link";
             })
