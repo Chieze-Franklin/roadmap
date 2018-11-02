@@ -275,7 +275,7 @@
         }],
         "children": [{
             "name": "Back-End",
-            "index": 1,
+            "index": 4,
             "children": [{
                 "name": "Web API",
                 "index": 1,
@@ -301,6 +301,7 @@
             }]
         }, {
             "name": "Front-End",
+            "index": 3,
             "links": [{
                 "title": "Frontend Masters - Your Path to Becoming a Career-Ready Web Developer!",
                 "url": "https://frontendmasters.com/learn/beginner/"
@@ -371,6 +372,14 @@
                     }]
                 }]
             }]
+        }, {
+            "name": "Git - Version Control",
+            "index": 1,
+            "type": "recommended"
+        }, {
+            "name": "SSH",
+            "index": 2,
+            "type": "recommended"
         }]
     }]
 }
