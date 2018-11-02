@@ -19,13 +19,28 @@
 
 .link {
     fill: none;
-    stroke: #ccc;
+    stroke: blue;
     stroke-width: 1.5px;
 }
 
-.nextlink {
+.branchlink {
     fill: none;
     stroke: red;
+    stroke-dasharray: 4 1;
+    stroke-width: 3px;
+}
+
+.recommendedbranchlink {
+    fill: none;
+    stroke: red;
+    stroke-dasharray: 4 1;
+    stroke-width: 3px;
+}
+
+.optionalbranchlink {
+    fill: none;
+    stroke: red;
+    stroke-dasharray: 4 1;
     stroke-width: 3px;
 }
 
