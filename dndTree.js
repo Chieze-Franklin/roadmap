@@ -528,8 +528,8 @@ dragListener = d3.behavior.drag()
         // Enter any new links at the parent's previous position.
         link.enter().insert("path", "g")
             .attr("class", function(d) {
-                console.log(d);
-                if (d.type === "branch") {console.log("nextlink");
+                if (d.target && d.target.type === "branch") {
+                    console.log(d);console.log("nextlink");
                     return "nextlink";
                 }
                 console.log("link");
