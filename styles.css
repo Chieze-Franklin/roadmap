@@ -37,7 +37,7 @@
 
 .branchlink {
     fill: none;
-    stroke: black;
+    stroke: none;
     stroke-dasharray: 4 1;
     stroke-width: 1.5px;
 }

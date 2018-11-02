@@ -341,30 +341,30 @@
                             ],
                             "children": [{
                                 "name": "npm",
-                                "type": "recommendedbranch"
+                                "type": "recommended"
                             }, {
                                 "name": "yarn",
-                                "type": "recommendedbranch"
+                                "type": "recommended"
                             }, {
                                 "name": "CSS Preprocessors",
                                 "notes": ["Preprocessors add functionality on top of CSS."],
                                 "children": [{
                                     "name": "Less",
                                     "index": 2,
-                                    "type": "optionalbranch"
+                                    "type": "optional"
                                 }, {
                                     "name": "PostCSS",
                                     "index": 3,
-                                    "type": "optionalbranch"
+                                    "type": "optional"
                                 }, {
                                     "name": "Sass",
                                     "index": 1,
-                                    "type": "recommendedbranch",
+                                    "type": "recommended",
                                     "notes": ["If you were to pick one preprocessors, I'll recommend this one."]
                                 }, {
                                     "name": "Stylus",
                                     "index": 4,
-                                    "type": "optionalbranch"
+                                    "type": "optional"
                                 }]
                             }]
                         }]
