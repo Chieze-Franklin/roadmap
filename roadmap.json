@@ -329,7 +329,8 @@
                         ],
                         "children": [{
                             "name": "jQuery",
-                            "notes": ["optional"]
+                            "notes": ["optional"],
+                            "status": "branch"
                         }, {
                             "name": "Package Managers",
                             "index": 1,
@@ -347,7 +348,8 @@
                                 "notes": ["Preprocessors add functionality on top of CSS."],
                                 "children": [{
                                     "name": "Less",
-                                    "index": 2
+                                    "index": 2,
+                                    "status": "red"
                                 }, {
                                     "name": "PostCSS",
                                     "index": 3
