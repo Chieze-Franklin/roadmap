@@ -459,7 +459,7 @@ dragListener = d3.behavior.drag()
                 } else if (d.type === 'optional') {
                     return 'optionalnodetext';
                 }
-                return 'nodetext';
+                return 'nodeText';
             })
             .attr("text-anchor", function(d) {
                 return d.children || d._children ? "end" : "start";
