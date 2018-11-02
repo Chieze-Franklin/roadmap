@@ -13,21 +13,21 @@
 }
 
 .nodetext {
-    color: green;
-    font-size:100px; 
+    font-size:10px; 
     font-family:sans-serif;
+    font-weight: bold;
 }
 
 .optionalnodetext {
-    color: gray;
     font-size:50px; 
     font-family:sans-serif;
+    font-weight: lighter;
 }
 
 .recommendednodetext {
-    color: black;
     font-size:10px; 
     font-family:sans-serif;
+    font-weight: normal;
 }
 
 .link {
