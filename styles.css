@@ -25,23 +25,23 @@
 
 .branchlink {
     fill: none;
-    stroke: red;
+    stroke: black;
     stroke-dasharray: 4 1;
-    stroke-width: 3px;
+    stroke-width: 1.5px;
 }
 
 .recommendedbranchlink {
     fill: none;
-    stroke: red;
+    stroke: green;
     stroke-dasharray: 4 1;
-    stroke-width: 3px;
+    stroke-width: 1.5px;
 }
 
 .optionalbranchlink {
     fill: none;
-    stroke: red;
+    stroke: none;
     stroke-dasharray: 4 1;
-    stroke-width: 3px;
+    stroke-width: 1.5px;
 }
 
 .templink {
