@@ -529,10 +529,8 @@ dragListener = d3.behavior.drag()
         link.enter().insert("path", "g")
             .attr("class", function(d) {
                 if (d.target && d.target.type === "branch") {
-                    console.log(d);console.log("nextlink");
-                    return "nextlink";
+                    return "branchlink";
                 }
-                console.log("link");
                 return "link";
             })
             .attr("d", function(d) {
