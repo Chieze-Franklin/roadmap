@@ -455,9 +455,9 @@ dragListener = d3.behavior.drag()
             .attr("dy", ".35em")
             .attr('class', function(d) {
                 if (d.type === 'recommended') {
-                    return 'recommendednodetext';
+                    return 'recommended';
                 } else if (d.type === 'optional') {
-                    return 'optionalnodetext';
+                    return 'optional';
                 }
                 return 'nodeText';
             })

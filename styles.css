@@ -18,13 +18,13 @@
     font-family:sans-serif;
 }
 
-.optionalnodetext {
+.node text.optional {
     color: gray;
     font-size:10px; 
     font-family:sans-serif;
 }
 
-.recommendednodetext {
+.node text.recommended {
     color: black;
     font-size:10px; 
     font-family:sans-serif;
