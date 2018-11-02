@@ -1,0 +1,9 @@
+{
+    "name": "Life-Long Learning",
+    "notes": ["This is a visualization of my learning roadmap as a life-long learner."],
+    "links": [{
+        "title": "github repo for this project",
+        "url": "https://github.com/Chieze-Franklin/roadmap"
+    }],
+    "children": []
+}
