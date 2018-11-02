@@ -330,7 +330,7 @@
                         "children": [{
                             "name": "jQuery",
                             "notes": ["optional"],
-                            "status": "branch"
+                            "type": "branch"
                         }, {
                             "name": "Package Managers",
                             "index": 1,
