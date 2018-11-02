@@ -340,9 +340,11 @@
                                 "Or create a login form and do form validation using some validation library."
                             ],
                             "children": [{
-                                "name": "npm"
+                                "name": "npm",
+                                "type": "recommendedbranch"
                             }, {
-                                "name": "yarn"
+                                "name": "yarn",
+                                "type": "recommendedbranch"
                             }, {
                                 "name": "CSS Preprocessors",
                                 "notes": ["Preprocessors add functionality on top of CSS."],
