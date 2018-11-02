@@ -17,7 +17,7 @@ function readJsonFromFile(node, parent) {
     });
     console.log('treeData', treeData);
     json = treeData;
-    if (treeData.children && treeData.children.length) {
+    if (treeData.children && treeData.children.length) { 
         json.children = [];
         treeData.children.forEach(function(child) {
             var childJson = readJsonFromFile(child, node);
