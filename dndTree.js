@@ -530,6 +530,10 @@ dragListener = d3.behavior.drag()
             .attr("class", function(d) {
                 if (d.target && d.target.type === "branch") {
                     return "branchlink";
+                } else if (d.target && d.target.type === "recommendedbranch") {
+                    return "recommendedbranchlink";
+                } else if (d.target && d.target.type === "optionalbranch") {
+                    return "optionalbranchlink";
                 }
                 return "link";
             })
