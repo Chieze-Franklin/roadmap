@@ -4,7 +4,34 @@
 * popper github repo: https://github.com/FezVrasta/popper.js
 */
 
-treeJSON = d3.json("roadmap.json", function(error, treeData) {
+function readJsonFromFile(node, parent) {
+    var json = {};
+    var treeData = d3.json((parent ? parent + '/' : '') + node + '/node.json');
+    console.log('treeData', treeData);
+    json = treeData;
+    if (treeData.children && treeData.children.length) {
+        json.children = [];
+        treeData.children.forEach(function(child) {
+            var childJson = readJsonFromFile(child, node);
+            console.log('childJson', childJson);
+            json.children.push(childJson);
+        });
+    }
+    return json;
+}
+
+function readRoadmap(callback) {
+    try {
+        var json = readJsonFromFile("roadmap", null);
+        callback(null, json);
+    } catch (error) {
+        callback(error);
+    }
+}
+
+readRoadmap(function(error, treeData) {
+    console.log('error', error);
+    console.log('treeData', treeData);
 
   // tooltip
   var tooltipDivElement = $('#mytooltip')[0];
