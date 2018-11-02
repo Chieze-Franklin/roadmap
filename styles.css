@@ -12,19 +12,19 @@
     stroke-width: 1.5px;
 }
 
-.node text {
+.nodetext {
     color: green;
-    font-size:10px; 
+    font-size:100px; 
     font-family:sans-serif;
 }
 
-.node text.optional {
+.optionalnodetext {
     color: gray;
-    font-size:10px; 
+    font-size:50px; 
     font-family:sans-serif;
 }
 
-.node text.recommended {
+.recommendednodetext {
     color: black;
     font-size:10px; 
     font-family:sans-serif;

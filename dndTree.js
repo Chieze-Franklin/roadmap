@@ -455,11 +455,11 @@ dragListener = d3.behavior.drag()
             .attr("dy", ".35em")
             .attr('class', function(d) {
                 if (d.type === 'recommended') {
-                    return 'recommended';
+                    return 'recommendednodetext';
                 } else if (d.type === 'optional') {
-                    return 'optional';
+                    return 'optionalnodetext';
                 }
-                return 'nodeText';
+                return 'nodetext';
             })
             .attr("text-anchor", function(d) {
                 return d.children || d._children ? "end" : "start";
