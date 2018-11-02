@@ -453,7 +453,14 @@ dragListener = d3.behavior.drag()
                 return d.children || d._children ? -10 : 10;
             })
             .attr("dy", ".35em")
-            .attr('class', 'nodeText')
+            .attr('class', function(d) {
+                if (d.type === 'recommended') {
+                    return 'recommendednodetext';
+                } else if (d.type === 'optional') {
+                    return 'optionalnodetext';
+                }
+                return 'nodetext';
+            })
             .attr("text-anchor", function(d) {
                 return d.children || d._children ? "end" : "start";
             })
@@ -530,9 +537,9 @@ dragListener = d3.behavior.drag()
             .attr("class", function(d) {
                 if (d.target && d.target.type === "branch") {
                     return "branchlink";
-                } else if (d.target && d.target.type === "recommendedbranch") {
+                } else if (d.target && d.target.type === "recommended") {
                     return "recommendedbranchlink";
-                } else if (d.target && d.target.type === "optionalbranch") {
+                } else if (d.target && d.target.type === "optional") {
                     return "optionalbranchlink";
                 }
                 return "link";

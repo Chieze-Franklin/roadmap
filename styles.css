@@ -12,7 +12,19 @@
     stroke-width: 1.5px;
 }
 
-.node text {
+.nodetext {
+    font-size:10px; 
+    font-family:sans-serif;
+}
+
+.optionalnodetext {
+    color: gray;
+    font-size:10px; 
+    font-family:sans-serif;
+}
+
+.recommendednodetext {
+    color: black;
     font-size:10px; 
     font-family:sans-serif;
 }
@@ -32,7 +44,7 @@
 
 .recommendedbranchlink {
     fill: none;
-    stroke: green;
+    stroke: none;
     stroke-dasharray: 4 1;
     stroke-width: 1.5px;
 }
