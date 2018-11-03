@@ -6,15 +6,7 @@
 
 function readJsonFromFile(node, parent) {
     var json = {};
-    var treeData = {};
-    $.ajax({
-        dataType: "json",
-        url: (parent ? parent + '/' : '') + node + '/node.json',
-        async: false,
-        success: function (data) {
-            treeData = data
-        }
-    });
+    var treeData = d3.json((parent ? parent + '/' : '') + node + '/node.json');
     console.log('treeData', treeData);
     json = treeData;
     if (treeData.children && treeData.children.length) {
