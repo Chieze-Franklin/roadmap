@@ -17,13 +17,22 @@ function readJsonFromFile(node, parent) {
     });
     console.log('treeData', treeData);
     json = treeData;
-    if (treeData.children && treeData.children.length) {
+    if (treeData.children && treeData.children.length) {console.log("here", treeData.children.length)
         json.children = [];
-        treeData.children.forEach(function(child) {
+        var i = 0;
+        for (i = 0; i < treeData.children.length; i++) {console.log("here2", treeData.children.length)
+            var child = treeData.children[i];
+            console.log('child', child);
             var childJson = readJsonFromFile(child, node);
             console.log('childJson', childJson);
             json.children.push(childJson);
-        });
+        }
+        // treeData.children.forEach(function(child) {
+        //     console.log('child', child);
+        //     var childJson = readJsonFromFile(child, node);
+        //     console.log('childJson', childJson);
+        //     json.children.push(childJson);
+        // });
     }
     return json;
 }
@@ -31,7 +40,8 @@ function readJsonFromFile(node, parent) {
 function readRoadmap(callback) {
     try {
         var json = readJsonFromFile("roadmap", null);
-        callback(null, json);
+        console.log("json", json)
+        //callback(null, json);
     } catch (error) {
         callback(error);
     }
