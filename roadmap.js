@@ -5,9 +5,12 @@
 */
 
 function readJsonFromFile(node, parent) {
+    console.log("node", node);
+    console.log("parent", parent);
     var json = {};
     var treeData = {};
     $.ajax({
+        contentType: "application/json",
         dataType: "json",
         url: (parent ? parent + '/' : '') + node + '/node.json',
         async: false,
@@ -17,22 +20,24 @@ function readJsonFromFile(node, parent) {
     });
     console.log('treeData', treeData);
     json = treeData;
-    if (treeData.children && treeData.children.length) {console.log("here", treeData.children.length)
+    var children = treeData.children;
+    console.log('children', children);
+    if (children && children.length) {
         json.children = [];
-        var i = 0;
-        for (i = 0; i < treeData.children.length; i++) {console.log("here2", treeData.children.length)
-            var child = treeData.children[i];
-            console.log('child', child);
-            var childJson = readJsonFromFile(child, node);
-            console.log('childJson', childJson);
-            json.children.push(childJson);
-        }
-        // treeData.children.forEach(function(child) {
+        // var i = 0;
+        // for (i = 0; i < children.length; i++) {
+        //     var child = children[i];
         //     console.log('child', child);
         //     var childJson = readJsonFromFile(child, node);
         //     console.log('childJson', childJson);
         //     json.children.push(childJson);
-        // });
+        // }
+        children.forEach(function(child) {
+            console.log('child', child);
+            var childJson = readJsonFromFile(child, node);
+            console.log('childJson', childJson);
+            json.children.push(childJson);
+        });
     }
     return json;
 }
@@ -41,9 +46,10 @@ function readRoadmap(callback) {
     try {
         var json = readJsonFromFile("roadmap", null);
         console.log("json", json)
-        //callback(null, json);
+        callback(null, json);
     } catch (error) {
-        callback(error);
+        console.log('error', error);
+        // callback(error);
     }
 }
 
@@ -52,7 +58,11 @@ readRoadmap(function(error, treeData) {
     console.log('treeData', treeData);
 
   // tooltip
+  console.log('$', $);
+  console.log("$('#mytooltip')", $('#mytooltip'));
+  console.log("$('#mytooltip')[0]", $('#mytooltip')[0]);
   var tooltipDivElement = $('#mytooltip')[0];
+  console.log('tooltipDivElement', tooltipDivElement);
   var tooltip = new Tooltip(tooltipDivElement, {
     html: true,
     placement: 'bottom',
