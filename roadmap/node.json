@@ -5,5 +5,7 @@
         "title": "github repo for this project",
         "url": "https://github.com/Chieze-Franklin/roadmap"
     }],
-    "children": []
+    "children": [
+        "ai"
+    ]
 }
