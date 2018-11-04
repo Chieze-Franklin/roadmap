@@ -19,7 +19,8 @@ function readJsonFromFile(node, parent) {
             treeData = data
         },
         error: function (jqXHR, exception) {
-            console.log('ajax error', exception);
+            console.log('jqXHR.status', jqXHR.status);
+            console.log('jqXHR.responseText', jqXHR.responseText);
         }
     });
     console.log('treeData', treeData);
