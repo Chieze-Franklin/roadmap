@@ -1,0 +1,9 @@
+{
+    "name": "React.js",
+    "type": "recommended",
+    "children": [
+        "flux",
+        "mobx",
+        "redux"
+    ]
+}

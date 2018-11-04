@@ -1,0 +1,8 @@
+{
+    "name": "Angular",
+    "index": 2,
+    "type": "recommended",
+    "children": [
+        "universal"
+    ]
+}

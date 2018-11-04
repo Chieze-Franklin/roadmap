@@ -1,0 +1,9 @@
+{
+    "name": "Static Type Checkers",
+    "index": 100,
+    "children": [
+        "flow",
+        "ssr",
+        "typescript"
+    ]
+}

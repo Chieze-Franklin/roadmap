@@ -1,0 +1,8 @@
+{
+    "name": "React",
+    "type": "recommended",
+    "children": [
+        "after",
+        "next"
+    ]
+}

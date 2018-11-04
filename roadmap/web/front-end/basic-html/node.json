@@ -1,0 +1,10 @@
+{
+    "name": "Basics of HTML",
+    "notes": [
+        "Learn the basics and how to write semantic HTML.",
+        "Learn to divide the page into sections, and to structure the DOM properly."
+    ],
+    "children": [
+        "basic-css"
+    ]
+}

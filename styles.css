@@ -18,11 +18,17 @@
     font-weight: bold;
 }
 
-.optionalnodetext {
+.alternativenodetext {
     font-size:10px; 
     font-family:sans-serif;
     font-weight: lighter;
     font-style: italic;
+}
+
+.optionalnodetext {
+    font-size:10px; 
+    font-family:sans-serif;
+    font-weight: lighter;
 }
 
 .recommendednodetext {
@@ -37,9 +43,16 @@
     stroke-width: 1.5px;
 }
 
-.optionalbranchlink {
+.alternativebranchlink {
     fill: none;
     stroke: none;
+    stroke-dasharray: 4 1;
+    stroke-width: 1px;
+}
+
+.optionalbranchlink {
+    fill: none;
+    stroke:  rgba(100, 100, 100, 0.5);
     stroke-dasharray: 4 1;
     stroke-width: 1px;
 }

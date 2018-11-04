@@ -1,0 +1,8 @@
+{
+    "name": "Vue",
+    "index": 1,
+    "type": "recommended",
+    "children": [
+        "nuxt"
+    ]
+}

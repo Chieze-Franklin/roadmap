@@ -35,26 +35,14 @@ function readJsonFromFile(node, parent) {
 function readRoadmap(callback) {
     try {
         var json = readJsonFromFile("roadmap", null);
-        console.log("json", json)
         callback(null, json);
-    } catch (error) {
-        console.log('error', error);
-        // callback(error);
-    }
+    } catch (error) {}
 }
 
 // ... = d3.json("roadmap.json, callback")
 readRoadmap(function(error, treeData) {
-    console.log('error', error);
-    console.log('treeData', treeData);
-
   // tooltip
   var tooltipDivElement = $('#mytooltip')[0];
-//   while (typeof tooltipDivElement === "undefined") {
-//     tooltipDivElement = $('#mytooltip')[0];
-//     console.log('tooltipDivElement', tooltipDivElement);
-//   }
-  console.log('tooltipDivElement2', tooltipDivElement);
   var tooltip = new Tooltip(tooltipDivElement, {
     html: true,
     placement: 'bottom',
@@ -505,6 +493,8 @@ dragListener = d3.behavior.drag()
                     return 'recommendednodetext';
                 } else if (d.type === 'optional') {
                     return 'optionalnodetext';
+                } else if (d.type === 'alternative') {
+                    return 'alternativenodetext';
                 }
                 return 'nodetext';
             })
@@ -586,6 +576,8 @@ dragListener = d3.behavior.drag()
                     return "link recommendedbranchlink";
                 } else if (d.target && d.target.type === "optional") {
                     return "link optionalbranchlink";
+                }else if (d.target && d.target.type === "alternative") {
+                    return "link alternativebranchlink";
                 }
                 return "link";
             })

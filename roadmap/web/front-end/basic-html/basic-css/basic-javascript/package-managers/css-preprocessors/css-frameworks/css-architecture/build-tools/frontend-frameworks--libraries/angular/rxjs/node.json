@@ -1,0 +1,7 @@
+{
+    "name": "RxJS",
+    "type": "recommended",
+    "notes": [
+        "Even if you don't pick Angular RxJS is an amazing library that can be used outside of Angular."
+    ]
+}

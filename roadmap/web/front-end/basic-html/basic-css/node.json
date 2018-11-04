@@ -1,0 +1,11 @@
+{
+    "name": "Basics of CSS",
+    "notes": [
+        "Learn the basics of CSS.",
+        "Learn how to use Grid and Flexbox.",
+        "Learn Media Queries and responsive web design."
+    ],
+    "children": [
+        "basic-javascript"
+    ]
+}

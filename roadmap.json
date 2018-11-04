@@ -6,14 +6,6 @@
         "url": "https://github.com/Chieze-Franklin/roadmap"
     }],
     "children": [{
-        "name": "Anything Can Happen",
-        "index": 12,
-        "children": [{
-            "name": "Blockchain"
-        }, {
-            "name": "3D Printing"
-        }]
-    }, {
         "name": "Computer Science",
         "index": 11,
         "children": [{
@@ -271,87 +263,6 @@
                     "index": 3938
                 }]
             }]
-        }, {
-            "name": "Front-End",
-            "index": 3,
-            "links": [{
-                "title": "Frontend Masters - Your Path to Becoming a Career-Ready Web Developer!",
-                "url": "https://frontendmasters.com/learn/beginner/"
-            }],
-            "children": [{
-                "name": "HTML",
-                "notes": [
-                    "Learn the basics and how to write semantic HTML.",
-                    "Learn to divide the page into sections, and to structure the DOM properly."
-                ],
-                "children": [{
-                    "name": "Basics of CSS",
-                    "notes": [
-                        "Learn the basics of CSS.",
-                        "Learn how to use Grid and Flexbox.",
-                        "Learn Media Queries and responsive web design."
-                    ],
-                    "children": [{
-                        "name": "Basics of JavaScript",
-                        "notes": [
-                            "Learn the syntax and basic constructs.",
-                            "Learn how to manipulate the DOM.",
-                            "Understand concepts like hoisting, event bubbling, prototype...",
-                            "Learn AJAX (XHR).",
-                            "Learn ES6+ new features, and writing modular JavaScript"
-                        ],
-                        "children": [{
-                            "name": "jQuery",
-                            "notes": ["optional"],
-                            "type": "recommended"
-                        }, {
-                            "name": "Package Managers",
-                            "index": 1,
-                            "notes": [
-                                "Learn how to install external libraries in your web pages.",
-                                "For instance, install some toast plugin and when a user clicks a button, show a toast.",
-                                "Or create a login form and do form validation using some validation library."
-                            ],
-                            "children": [{
-                                "name": "npm",
-                                "type": "recommended"
-                            }, {
-                                "name": "yarn",
-                                "type": "recommended"
-                            }, {
-                                "name": "CSS Preprocessors",
-                                "notes": ["Preprocessors add functionality on top of CSS."],
-                                "children": [{
-                                    "name": "Less",
-                                    "index": 2,
-                                    "type": "optional"
-                                }, {
-                                    "name": "PostCSS",
-                                    "index": 3,
-                                    "type": "optional"
-                                }, {
-                                    "name": "Sass",
-                                    "index": 1,
-                                    "type": "recommended",
-                                    "notes": ["If you were to pick one preprocessors, I'll recommend this one."]
-                                }, {
-                                    "name": "Stylus",
-                                    "index": 4,
-                                    "type": "optional"
-                                }]
-                            }]
-                        }]
-                    }]
-                }]
-            }]
-        }, {
-            "name": "Git - Version Control",
-            "index": 1,
-            "type": "recommended"
-        }, {
-            "name": "SSH",
-            "index": 2,
-            "type": "recommended"
         }]
     }]
 }

@@ -1,0 +1,15 @@
+{
+    "name": "CSS Architecture",
+    "index": 10,
+    "notes": [
+        "There are different ways to structure your CSS better and make it more maintainable."
+    ],
+    "children": [
+        "atomic",
+        "bem",
+        "build-tools",
+        "oocss",
+        "smacss",
+        "suitcss"
+    ]
+}

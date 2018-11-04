@@ -1,0 +1,8 @@
+{
+    "name": "Vue.js",
+    "index": 1,
+    "type": "recommended",
+    "children": [
+        "vuex"
+    ]
+}

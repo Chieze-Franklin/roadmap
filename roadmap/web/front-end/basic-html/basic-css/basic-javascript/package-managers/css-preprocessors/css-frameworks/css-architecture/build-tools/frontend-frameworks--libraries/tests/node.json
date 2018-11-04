@@ -1,0 +1,15 @@
+{
+    "name": "Testing Your Apps",
+    "index": 100,
+    "notes": [
+        "Before picking a test tool, endeavor to understand the different test types."
+    ],
+    "children": [
+        "enzyme",
+        "jest",
+        "karma",
+        "mocha",
+        "protractor",
+        "pwa"
+    ]
+}

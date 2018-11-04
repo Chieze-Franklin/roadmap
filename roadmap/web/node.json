@@ -1,0 +1,20 @@
+{
+    "name": "Web",
+    "index": 1,
+    "links": [{
+        "title": "Web Developer Roadmap - 2018",
+        "url": "https://github.com/kamranahmedse/developer-roadmap"
+    }],
+    "children": [
+        "back-end",
+        "basic-terminal-usage",
+        "character-encodings",
+        "data-structures--algorithms",
+        "design-patterns",
+        "front-end",
+        "git",
+        "github",
+        "https-and-apis",
+        "ssh"
+    ]
+}

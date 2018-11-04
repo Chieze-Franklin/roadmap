@@ -1,0 +1,14 @@
+{
+    "name": "Package Managers",
+    "index": 1,
+    "notes": [
+        "Learn how to install external libraries in your web pages.",
+        "For instance, install some toast plugin and when a user clicks a button, show a toast.",
+        "Or create a login form and do form validation using some validation library."
+    ],
+    "children": [
+        "css-preprocessors",
+        "npm",
+        "yarn"
+    ]
+}

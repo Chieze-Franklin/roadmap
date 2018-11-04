@@ -1,0 +1,9 @@
+{
+    "name": "Performance Issues",
+    "index": 3,
+    "type": "optional",
+    "notes": [
+        "Learn how to measure and improve the performance of applications.",
+        "E.g. Interactivity Time, Page Speed Index, Lighthouse Score etc."
+    ]
+}
