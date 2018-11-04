@@ -16,12 +16,13 @@ function readJsonFromFile(node, parent) {
         url: (parent ? parent + '/' : '') + node + '/node.json',
         async: false,
         success: function (data) {
+            console.log((parent ? parent + '/' : '') + node + '/node.json');
             treeData = data
         },
         error: function (jqXHR, exception) {
             console.log((parent ? parent + '/' : '') + node + '/node.json');
             console.log('jqXHR.status', jqXHR.status);
-            console.log('jqXHR.responseText', jqXHR.responseText);
+            // console.log('jqXHR.responseText', jqXHR.responseText);
         }
     });
     console.log('treeData', treeData);
