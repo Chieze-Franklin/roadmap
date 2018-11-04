@@ -1,4 +1,8 @@
 {
     "name": "AI",
-    "index": 8
+    "index": 8,
+    "children": [
+        "applications",
+        "libraries--frameworks"
+    ]
 }

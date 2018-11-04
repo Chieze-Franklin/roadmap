@@ -58,11 +58,12 @@ readRoadmap(function(error, treeData) {
     console.log('treeData', treeData);
 
   // tooltip
-  console.log('$', $);
-  console.log("$('#mytooltip')", $('#mytooltip'));
-  console.log("$('#mytooltip')[0]", $('#mytooltip')[0]);
   var tooltipDivElement = $('#mytooltip')[0];
-  console.log('tooltipDivElement', tooltipDivElement);
+//   while (typeof tooltipDivElement === "undefined") {
+//     tooltipDivElement = $('#mytooltip')[0];
+//     console.log('tooltipDivElement', tooltipDivElement);
+//   }
+  console.log('tooltipDivElement2', tooltipDivElement);
   var tooltip = new Tooltip(tooltipDivElement, {
     html: true,
     placement: 'bottom',
