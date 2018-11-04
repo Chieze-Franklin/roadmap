@@ -6,34 +6,6 @@
         "url": "https://github.com/Chieze-Franklin/roadmap"
     }],
     "children": [{
-        "name": "AI",
-        "index": 8,
-        "children": [{
-            "name": "Applications",
-            "index": 3,
-            "children": [{
-                "name": "Chat Bots"
-            }]
-        }, {
-            "name": "Libraries & Frameworks",
-            "index": 2,
-            "children": [{
-                "name": "Google Tensor Flow"
-            }, {
-                "name": "Microsoft Cognitive Toolkit"
-            }]
-        }, {
-            "name": "Theory",
-            "index": 1,
-            "children": [{
-                "name": "Deep Learning"
-            }, {
-                "name": "Machine Learning"
-            }, {
-                "name": "Neural Networks"
-            }]
-        }]
-    }, {
         "name": "Anything Can Happen",
         "index": 12,
         "children": [{

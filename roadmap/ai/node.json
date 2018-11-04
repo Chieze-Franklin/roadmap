@@ -3,6 +3,7 @@
     "index": 8,
     "children": [
         "applications",
-        "libraries--frameworks"
+        "libraries--frameworks",
+        "theory"
     ]
 }

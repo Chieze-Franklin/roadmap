@@ -5,8 +5,6 @@
 */
 
 function readJsonFromFile(node, parent) {
-    console.log("node", node);
-    console.log("parent", parent);
     var json = {};
     var treeData = {};
     $.ajax({
