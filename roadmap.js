@@ -9,7 +9,6 @@ function readJsonFromFile(node, parent) {
     console.log("parent", parent);
     var json = {};
     var treeData = {};
-    $.support.cors = true;
     $.ajax({
         contentType: "application/json",
         dataType: "json",
@@ -41,7 +40,7 @@ function readJsonFromFile(node, parent) {
         // }
         children.forEach(function(child) {
             console.log('child', child);
-            var childJson = readJsonFromFile(child, node);
+            var childJson = readJsonFromFile(child, (parent ? parent + '/' : '') + node);
             console.log('childJson', childJson);
             json.children.push(childJson);
         });
