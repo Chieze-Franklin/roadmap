@@ -7,10 +7,14 @@
             <script src="https://d3js.org/d3.v3.min.js"></script>
             <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
             <script src="https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js"></script>
-            <script src="roadmap.js"></script>
     </head>
     <body>
         <div id="tree-container"></div>
         <div id="mytooltip" class="mytooltip"></div>
+        <!--
+            the synchronous $.ajax in roadmap.js seemed to be preventing the DOM from completing on time
+            so I moved roadmap.js down here after the needed DOM elements (especially #mytooltip) have been created
+        -->
+        <script src="roadmap.js"></script>
     </body>
 </html>
