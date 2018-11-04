@@ -9,6 +9,7 @@ function readJsonFromFile(node, parent) {
     console.log("parent", parent);
     var json = {};
     var treeData = {};
+    $.support.cors = true;
     $.ajax({
         contentType: "application/json",
         dataType: "json",
@@ -16,6 +17,9 @@ function readJsonFromFile(node, parent) {
         async: false,
         success: function (data) {
             treeData = data
+        },
+        error: function (jqXHR, exception) {
+            console.log('ajax error', exception);
         }
     });
     console.log('treeData', treeData);
@@ -53,6 +57,7 @@ function readRoadmap(callback) {
     }
 }
 
+// ... = d3.json("roadmap.json, callback")
 readRoadmap(function(error, treeData) {
     console.log('error', error);
     console.log('treeData', treeData);
