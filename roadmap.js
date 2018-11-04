@@ -13,33 +13,19 @@ function readJsonFromFile(node, parent) {
         url: (parent ? parent + '/' : '') + node + '/node.json',
         async: false,
         success: function (data) {
-            console.log((parent ? parent + '/' : '') + node + '/node.json');
             treeData = data
         },
         error: function (jqXHR, exception) {
-            console.log((parent ? parent + '/' : '') + node + '/node.json');
-            console.log('jqXHR.status', jqXHR.status);
+            // console.log('jqXHR.status', jqXHR.status);
             // console.log('jqXHR.responseText', jqXHR.responseText);
         }
     });
-    console.log('treeData', treeData);
     json = treeData;
     var children = treeData.children;
-    console.log('children', children);
     if (children && children.length) {
         json.children = [];
-        // var i = 0;
-        // for (i = 0; i < children.length; i++) {
-        //     var child = children[i];
-        //     console.log('child', child);
-        //     var childJson = readJsonFromFile(child, node);
-        //     console.log('childJson', childJson);
-        //     json.children.push(childJson);
-        // }
         children.forEach(function(child) {
-            console.log('child', child);
             var childJson = readJsonFromFile(child, (parent ? parent + '/' : '') + node);
-            console.log('childJson', childJson);
             json.children.push(childJson);
         });
     }
