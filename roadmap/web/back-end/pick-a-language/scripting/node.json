@@ -1,0 +1,11 @@
+{
+    "name": "Scripting Languages",
+    "type": "recommended",
+    "children": [
+        "node",
+        "typescript",
+        "php",
+        "python",
+        "ruby"
+    ]
+}

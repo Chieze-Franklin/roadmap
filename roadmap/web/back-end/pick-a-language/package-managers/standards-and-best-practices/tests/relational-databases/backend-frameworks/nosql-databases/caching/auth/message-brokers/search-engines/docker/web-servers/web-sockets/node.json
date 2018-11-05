@@ -1,0 +1,7 @@
+{
+    "name": "Web Sockets",
+    "index": 10,
+    "children": [
+        "graphql"
+    ]
+}

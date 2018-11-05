@@ -1,0 +1,12 @@
+{
+    "name": "Functional Languages",
+    "index": 1,
+    "type": "recommended",
+    "children": [
+        "clojure",
+        "elixir",
+        "erlang",
+        "haskell",
+        "scala"
+    ]
+}

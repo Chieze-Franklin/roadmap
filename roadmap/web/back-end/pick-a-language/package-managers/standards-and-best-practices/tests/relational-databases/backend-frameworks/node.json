@@ -1,0 +1,13 @@
+{
+    "name": "Front-End Frameworks",
+    "index": 10,
+    "notes": [
+        "There are various options.",
+        "For Node.js - Express.js, Hapi.js",
+        "For PHP - Laravel, Symfony",
+        "For Python - Django"
+    ],
+    "children": [
+        "nosql-databases"
+    ]
+}

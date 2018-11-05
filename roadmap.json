@@ -230,39 +230,5 @@
         }, {
             "name": "Raspberry Pi"
         }]
-    }, {
-        "name": "Web",
-        "index": 1,
-        "links": [{
-            "title": "Web Developer Roadmap - 2018",
-            "url": "https://github.com/kamranahmedse/developer-roadmap"
-        }],
-        "children": [{
-            "name": "Back-End",
-            "index": 4,
-            "children": [{
-                "name": "Web API",
-                "index": 1,
-                "links": [{
-                    "title": "JSON API",
-                    "url": "http://jsonapi.org/"
-                }, {
-                    "title": "How To GraphQL",
-                    "url": "https://www.howtographql.com/basics/0-introduction/"
-                }]
-            }, {
-                "name": "Web Servers",
-                "children": [{
-                    "name": "Django",
-                    "index": 3938
-                }, {
-                    "name": "Laravel",
-                    "index": 3938
-                }, {
-                    "name": "Node",
-                    "index": 3938
-                }]
-            }]
-        }]
     }]
 }
