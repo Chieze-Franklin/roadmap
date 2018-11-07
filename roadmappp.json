@@ -1,0 +1,234 @@
+{
+    "name": "Life-Long Learning",
+    "notes": ["This is a visualization of my learning roadmap as a life-long learner."],
+    "links": [{
+        "title": "github repo for this project",
+        "url": "https://github.com/Chieze-Franklin/roadmap"
+    }],
+    "children": [{
+        "name": "Computer Science",
+        "index": 11,
+        "children": [{
+            "name": "Data Structures and Algorithms"
+        }]
+    }, {
+        "name": "Data & Security",
+        "index": 10,
+        "children": [{
+            "name": "Big Data"
+        }]
+    }, {
+        "name": "Desktop",
+        "children": [{
+            "name": "Cross-Platform",
+            "children": [{
+                "name": ".NET Core",
+                "index": 1983
+            }, {
+                "name": "Electron",
+                "index": 2047
+            }]
+        }, {
+            "name": "Mac",
+            "index": 1041
+        }, {
+            "name": "Linux",
+            "index": 5176
+        }, {
+            "name": "Windows",
+            "children": [{
+                "name": "Console Application",
+                "index": 1983
+            }, {
+                "name": "Windows Forms Application",
+                "index": 2047
+            }, {
+                "name": "Windows Presentation Foundation",
+                "index": 2047
+            }, {
+                "name": "Universal Windows Platform",
+                "index": 2047
+            }]
+        }]
+    }, {
+        "name": "Developer Tools",
+        "children": [{
+            "name": "Guidelines & Conventions",
+            "index": 1759
+        }, {
+            "name": "CLI Tools",
+            "index": 2165
+        }, {
+            "name": "Continuous Integration & Deployment",
+            "children": [{
+                "name": "Test Runners",
+                "index": 2220
+            }]
+        }, {
+            "name": "Dependency Managers",
+            "children": [{
+                "name": "Module Bundlers",
+                "index": 721
+            }, {
+                "name": "Package Managers",
+                "index": 2220
+            }]
+        }, {
+            "name": "Frameworks and Libraries",
+            "index": 772
+        }, {
+            "name": "IDEs",
+            "children": [{
+                "name": "IDE Plugins",
+                "index": 2220
+            }]
+        }, {
+            "name": "Languages",
+            "index": 2165
+        }, {
+            "name": "Language Tools",
+            "children": [{
+                "name": "Analyzers (static and dynamic)",
+                "index": 721
+            }, {
+                "name": "Compilers",
+                "index": 2220
+            }, {
+                "name": "Cross-Language Communication",
+                "index": 2220
+            }, {
+                "name": "Linters",
+                "index": 2220
+            }, {
+                "name": "Parsers",
+                "index": 2220
+            }, {
+                "name": "Transpilers",
+                "index": 2220
+            }]
+        }, {
+            "name": "Runtime/Execution Environments",
+            "index": 2165
+        }, {
+            "name": "Version Control",
+            "index": 2165
+        }]
+    }, {
+        "name": "DevOps",
+        "index": 9,
+        "children": [{
+            "name": "Cloud Platforms",
+            "index": 2,
+            "children": [{
+                "name": "AWS",
+                "index": 2
+            }, {
+                "name": "Azure",
+                "index": 4
+            }, {
+                "name": "GCP",
+                "index": 3
+            }, {
+                "name": "Heroku",
+                "index": 1
+            }]
+        }, {
+            "name": "Shell Script",
+            "index": 1,
+            "children": [{
+                "name": "Linux",
+                "index": 2
+            }, {
+                "name": "Mac",
+                "index": 3
+            }, {
+                "name": "Windows",
+                "index": 1
+            }]
+        }]
+    }, {
+        "name": "Games & Graphics",
+        "children": [{
+            "name": "2D Graphics",
+            "index": 1082
+        }, {
+            "name": "3D Graphics",
+            "index": 1336
+        }, {
+            "name": "2D Animations",
+            "index": 319
+        }, {
+            "name": "3D Animations",
+            "index": 10498
+        }, {
+            "name": "2D Games",
+            "index": 2822
+        }, {
+            "name": "3D Games",
+            "index": 9983
+        }, {
+            "name": "Augmented Reality",
+            "index": 2213
+        }, {
+            "name": "Virtual Reality",
+            "index": 1681
+        }]
+    }, {
+        "name": "Mobile & Wearables",
+        "children": [{
+            "name": "Android",
+            "index": 1616
+        }, {
+            "name": "IOS",
+            "index": 1027
+        }, {
+            "name": "Cross-Platform",
+            "children": [{
+                "name": "React Native",
+                "index": 593
+            }, {
+                "name": "NativeScript",
+                "index": 330
+            }, {
+                "name": "Ionic",
+                "index": 287
+            }, {
+                "name": "Xamarin",
+                "index": 264
+            }]
+        }]
+    }, {
+        "name": "Operating System & Hardware",
+        "children": [{
+            "name": "OS Development",
+            "children": [{
+                "name": "Android",
+                "children": [{
+                        "name": "System Apps",
+                        "index": 330
+                    }, {
+                        "name": "Flashing, Rooting, Unlocking...",
+                        "index": 287
+                    }, {
+                        "name": "Firmware",
+                        "index": 264
+                    }, {
+                        "name": "Forking Android",
+                        "index": 264
+                    }
+                ]
+            }]
+        }, {
+            "name": "Hardware Components",
+            "index": 3151
+        }]
+    }, {
+        "name": "Robotics & IoT",
+        "index": 7,
+        "children": [{
+            "name": "Arduino"
+        }, {
+            "name": "Raspberry Pi"
+        }]
+    }]
+}

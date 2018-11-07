@@ -4,6 +4,10 @@
 * popper github repo: https://github.com/FezVrasta/popper.js
 */
 
+/*
+// this method of compiling the JSON on page load takes too long
+// so this has been moved to the Node.js file 'compiler.js'
+// always run 'node compiler' before pushing to Github
 function readJsonFromFile(node, parent) {
     var json = {};
     var treeData = {};
@@ -39,8 +43,9 @@ function readRoadmap(callback) {
     } catch (error) {}
 }
 
-// ... = d3.json("roadmap.json, callback")
-readRoadmap(function(error, treeData) {
+readRoadmap(function(error, treeData)
+*/
+treeJSON = d3.json("roadmap.json", function(error, treeData) {
   // tooltip
   var tooltipDivElement = $('#mytooltip')[0];
   var tooltip = new Tooltip(tooltipDivElement, {
