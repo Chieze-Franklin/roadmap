@@ -1,0 +1,19 @@
+{
+  "name": "roadmap",
+  "version": "1.0.0",
+  "description": "A visualization of my learning roadmap as a ~software developer~ life-long learner.",
+  "main": "compiler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chieze-Franklin/roadmap.git"
+  },
+  "author": "Franklin Chieze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chieze-Franklin/roadmap/issues"
+  },
+  "homepage": "https://github.com/Chieze-Franklin/roadmap#readme"
+}
