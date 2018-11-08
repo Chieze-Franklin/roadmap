@@ -8,6 +8,7 @@
     "children": [
         "ai",
         "anything-can-happen",
+        "devops",
         "web"
     ]
 }
