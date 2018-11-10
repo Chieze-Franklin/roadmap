@@ -4,6 +4,7 @@
         "c-cpp",
         "go",
         "node",
+        "os-concepts",
         "python",
         "ruby",
         "rust"

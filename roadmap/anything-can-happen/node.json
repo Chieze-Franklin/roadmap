@@ -2,7 +2,6 @@
     "name": "Anything Can Happen",
     "index": 12,
     "children": [
-        "blockchain",
-        "3d-printing"
+        "blockchain"
     ]
 }
