@@ -1,9 +1,4 @@
 {
     "name": "Theory",
-    "index": 1,
-    "children": [
-        "deep-learning",
-        "machine-learning",
-        "neural-networks"
-    ]
+    "index": 1
 }

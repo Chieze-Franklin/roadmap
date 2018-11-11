@@ -4,12 +4,5 @@
     "links": [{
         "title": "github repo for this project",
         "url": "https://github.com/Chieze-Franklin/roadmap"
-    }],
-    "children": [
-        "ai",
-        "anything-can-happen",
-        "data-and-security",
-        "devops",
-        "web"
-    ]
+    }]
 }

@@ -1,7 +1,4 @@
 {
     "name": "Applications",
-    "index": 3,
-    "children": [
-        "chat-bots"
-    ]
+    "index": 3
 }

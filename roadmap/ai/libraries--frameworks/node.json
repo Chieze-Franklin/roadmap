@@ -1,8 +1,4 @@
 {
     "name": "Libraries & Frameworks",
-    "index": 2,
-    "children": [
-        "google-tensor-flow",
-        "microsoft-cognitive-toolkit"
-    ]
+    "index": 2
 }

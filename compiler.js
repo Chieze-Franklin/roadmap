@@ -1,28 +1,27 @@
 var fs = require('fs');
 var path = require('path');
 
-function readJsonFromFile(node, parent) {
+function readJsonFromFile(node) {
   var json = {};
   var treeData = {};
-  var currentDir = (parent ? parent + '/' : '') + node;
-  var data = fs.readFileSync(currentDir + '/node.json', 'utf8');
+  var data = fs.readFileSync(node + '/node.json', 'utf8');
   treeData = JSON.parse(data);
   json = treeData;
-  var innerDirs = fs.readdirSync(currentDir)
-    .map(name => path.join(currentDir, name))
+  var innerDirs = fs.readdirSync(node)
+    .map(name => path.join(node, name))
     .filter(content => fs.lstatSync(content).isDirectory());
-  var children = innerDirs; //treeData.children;
+  var children = innerDirs;
   if (children && children.length) {
       json.children = [];
       children.forEach(function(child) {
-          var childJson = readJsonFromFile(child, null); // readJsonFromFile(child, currentDir);
+          var childJson = readJsonFromFile(child);
           json.children.push(childJson);
       });
   }
   return json;
 }
 
-var json = readJsonFromFile("roadmap", null);
+var json = readJsonFromFile("roadmap");
 console.log('JSON compiled!');
 fs.writeFile('roadmap.json', JSON.stringify(json), function(err) {
   if (err) {
