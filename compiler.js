@@ -1,16 +1,21 @@
 var fs = require('fs');
+var path = require('path');
 
 function readJsonFromFile(node, parent) {
   var json = {};
   var treeData = {};
-  var data = fs.readFileSync((parent ? parent + '/' : '') + node + '/node.json', 'utf8');
+  var currentDir = (parent ? parent + '/' : '') + node;
+  var data = fs.readFileSync(currentDir + '/node.json', 'utf8');
   treeData = JSON.parse(data);
   json = treeData;
-  var children = treeData.children;
+  var innerDirs = fs.readdirSync(currentDir)
+    .map(name => path.join(currentDir, name))
+    .filter(content => fs.lstatSync(content).isDirectory());
+  var children = innerDirs; //treeData.children;
   if (children && children.length) {
       json.children = [];
       children.forEach(function(child) {
-          var childJson = readJsonFromFile(child, (parent ? parent + '/' : '') + node);
+          var childJson = readJsonFromFile(child, null); // readJsonFromFile(child, currentDir);
           json.children.push(childJson);
       });
   }
