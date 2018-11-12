@@ -1,6 +1,3 @@
 {
-    "name": "Blockchain",
-    "children": [
-        "3d-printing"
-    ]
+    "name": "Blockchain"
 }
