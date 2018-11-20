@@ -1,7 +1,4 @@
 {
     "name": "DevOps",
-    "index": 9,
-    "children": [
-        "pick-a-language"
-    ]
+    "index": 9
 }
