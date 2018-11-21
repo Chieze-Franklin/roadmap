@@ -1,12 +1,4 @@
 {
     "name": "Relational Databases",
-    "index": 10,
-    "children": [
-        "backend-frameworks",
-        "mariadb",
-        "mssql",
-        "mysql",
-        "oracle",
-        "postgresql"
-    ]
+    "index": 10
 }

@@ -5,8 +5,5 @@
         "There are different test types.",
         "For now learn how to write Unit and Integration tests in your chosen language.",
         "understand terminologies such as mocks, stubs etc."
-    ],
-    "children": [
-        "relational-databases"
     ]
 }

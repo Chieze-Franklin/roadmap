@@ -1,11 +1,4 @@
 {
     "name": "Web Servers",
-    "index": 10,
-    "children": [
-        "apache",
-        "caddy",
-        "iis",
-        "nginx",
-        "web-sockets"
-    ]
+    "index": 10
 }

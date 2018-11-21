@@ -6,8 +6,5 @@
         "For Node.js - Express.js, Hapi.js",
         "For PHP - Laravel, Symfony",
         "For Python - Django"
-    ],
-    "children": [
-        "nosql-databases"
     ]
 }

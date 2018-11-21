@@ -1,12 +1,4 @@
 {
     "name": "Authentication/Authorization",
-    "index": 10,
-    "children": [
-        "basic",
-        "jwt",
-        "message-brokers",
-        "oauth",
-        "token",
-        "openid"
-    ]
+    "index": 10
 }

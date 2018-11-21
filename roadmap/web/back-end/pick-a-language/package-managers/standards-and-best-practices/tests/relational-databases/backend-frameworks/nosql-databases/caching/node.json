@@ -3,10 +3,5 @@
     "index": 10,
     "notes": [
         "Learn how to implement app level caching."
-    ],
-    "children": [
-        "auth",
-        "memcached",
-        "redis"
     ]
 }

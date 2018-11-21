@@ -1,11 +1,4 @@
 {
     "name": "NoSQL Databases",
-    "index": 10,
-    "children": [
-        "caching",
-        "cassandra",
-        "couchbase",
-        "mongodb",
-        "rethinkdb"
-    ]
+    "index": 10
 }

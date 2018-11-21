@@ -7,8 +7,5 @@
         "",
         "Make sure to read about the best practices for security.",
         "Read OWASP guidelines and understand the different security issues and how to avoid them in the language of your choice."
-    ],
-    "children": [
-        "tests"
     ]
 }

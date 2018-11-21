@@ -1,7 +1,4 @@
 {
     "name": "Graph Databases",
-    "index": 10,
-    "children": [
-        "explore"
-    ]
+    "index": 10
 }

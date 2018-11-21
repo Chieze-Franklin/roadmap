@@ -1,11 +1,5 @@
 {
     "name": "Other Options",
     "index": 2,
-    "type": "recommended",
-    "children": [
-        "dotnet",
-        "golang",
-        "java",
-        "rust"
-    ]
+    "type": "recommended"
 }

@@ -5,8 +5,5 @@
         "Package managers help you bring external dependencies into your application, and to distribute your won packages.",
         "Learn how to use the package manager for the language you picked.",
         "E.g. Node.js has NPM, PHP has composer, Python has pip, Ruby has gem etc."
-    ],
-    "children": [
-        "standards-and-best-practices"
     ]
 }

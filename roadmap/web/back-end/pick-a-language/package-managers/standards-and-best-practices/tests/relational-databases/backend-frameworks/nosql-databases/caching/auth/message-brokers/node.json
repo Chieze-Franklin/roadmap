@@ -1,9 +1,4 @@
 {
     "name": "Message Brokers",
-    "index": 10,
-    "children": [
-        "kafka",
-        "rabbitmq",
-        "search-engines"
-    ]
+    "index": 10
 }
