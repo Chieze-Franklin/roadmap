@@ -6,9 +6,5 @@
         "Understand concepts like hoisting, event bubbling, prototype...",
         "Learn AJAX (XHR).",
         "Learn ES6+ new features, and writing modular JavaScript"
-    ],
-    "children": [
-        "jquery",
-        "package-managers"
     ]
 }

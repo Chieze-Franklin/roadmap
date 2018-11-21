@@ -3,18 +3,5 @@
     "index": 10,
     "notes": [
         "Tools that help in building/bundling and development."
-    ],
-    "children": [
-        "eslint",
-        "frontend-frameworks--libraries",
-        "grunt",
-        "gulp",
-        "jscs",
-        "jshint",
-        "jslint",
-        "npm-scripts",
-        "parcel",
-        "rollup",
-        "webpack"
     ]
 }

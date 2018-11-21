@@ -1,9 +1,5 @@
 {
     "name": "Angular",
     "index": 2,
-    "type": "recommended",
-    "children": [
-        "ngrx",
-        "rxjs"
-    ]
+    "type": "recommended"
 }

@@ -4,8 +4,5 @@
     "links": [{
         "title": "Frontend Masters - Your Path to Becoming a Career-Ready Web Developer!",
         "url": "https://frontendmasters.com/learn/beginner/"
-    }],
-    "children": [
-        "basic-html"
-    ]
+    }]
 }

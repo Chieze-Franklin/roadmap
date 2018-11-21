@@ -1,10 +1,4 @@
 {
     "name": "Server Side Rendering",
-    "index": 100,
-    "children": [
-        "angular",
-        "explore",
-        "react",
-        "vue"
-    ]
+    "index": 100
 }

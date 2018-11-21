@@ -3,12 +3,5 @@
     "index": 2,
     "notes": [
         "Preprocessors add functionality on top of CSS."
-    ],
-    "children": [
-        "css-frameworks",
-        "less",
-        "postcss",
-        "sass",
-        "stylus"
     ]
 }

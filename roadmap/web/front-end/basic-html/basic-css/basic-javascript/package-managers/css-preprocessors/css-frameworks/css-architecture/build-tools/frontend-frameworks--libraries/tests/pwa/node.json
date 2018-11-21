@@ -3,8 +3,5 @@
     "index": 100,
     "notes": [
         "Learn about service workers and how to make progressive web apps."
-    ],
-    "children": [
-        "static-type-checkers"
     ]
 }
