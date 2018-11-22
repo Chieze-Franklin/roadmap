@@ -1,13 +1,4 @@
 {
     "name": "Understand Different OS Concepts",
-    "index": 99,
-    "children": [
-        "file-systems",
-        "io-management",
-        "memory--storage",
-        "process-management",
-        "sockets",
-        "threads-and-concurrency",
-        "virtualization"
-    ]
+    "index": 99
 }
