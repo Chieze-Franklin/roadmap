@@ -1,0 +1,8 @@
+{
+    "name": "Process Monitoring",
+    "index": 4,
+    "type": "recommended",
+    "notes": [
+        "ps, top, htop, atop, lsof"
+    ]
+}

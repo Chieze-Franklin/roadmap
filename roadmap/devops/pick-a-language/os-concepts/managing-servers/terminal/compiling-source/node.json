@@ -1,0 +1,8 @@
+{
+    "name": "Compiling apps from source",
+    "index": 3,
+    "type": "recommended",
+    "notes": [
+        "gcc, make and other related stuff"
+    ]
+}

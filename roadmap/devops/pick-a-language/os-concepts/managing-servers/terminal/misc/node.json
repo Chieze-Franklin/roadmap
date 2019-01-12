@@ -1,0 +1,9 @@
+{
+    "name": "Misc",
+    "index": 7,
+    "type": "recommended",
+    "notes": [
+        "strace, dtrace, systemtap",
+        "uname, df, history"
+    ]
+}

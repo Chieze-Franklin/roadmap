@@ -1,0 +1,8 @@
+{
+    "name": "System Performance",
+    "index": 5,
+    "type": "recommended",
+    "notes": [
+        "nmon, iostat, sar, vmstat"
+    ]
+}

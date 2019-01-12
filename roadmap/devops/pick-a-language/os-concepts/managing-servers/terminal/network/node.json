@@ -1,0 +1,9 @@
+{
+    "name": "Network",
+    "index": 6,
+    "type": "recommended",
+    "notes": [
+        "nmap, tcpdump, ping, mtr, traceroute",
+        "airmon, airodump, dig, iptables"
+    ]
+}

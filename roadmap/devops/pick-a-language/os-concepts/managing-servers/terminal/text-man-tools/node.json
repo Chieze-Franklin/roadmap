@@ -1,0 +1,8 @@
+{
+    "name": "Text Manipulation Tools",
+    "type": "recommended",
+    "notes": [
+        "awk, sed, grep, sort, uniq, cat, cut",
+        "echo, fmt, tr, nl, egrp, fgrep, wc"
+    ]
+}
